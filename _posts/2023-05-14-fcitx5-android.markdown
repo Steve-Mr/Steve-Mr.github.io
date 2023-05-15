@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "这次看齐 iOS 了。Fcitx5 for Android 简单体验"
+title:  "这次看齐 iOS 了。 Fcitx5 for Android 简单体验"
 date:   2023-05-14 09:41:44 +0800
 categories: Android IME 
 ---
