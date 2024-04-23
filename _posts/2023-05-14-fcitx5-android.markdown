@@ -3,6 +3,8 @@ layout: post
 title:  "这次看齐 iOS 了。 Fcitx5 for Android 简单体验"
 date:   2023-05-14 09:41:44 +0800
 categories: Android IME 
+excerpt_separator: <!--more-->
+toc: true
 ---
 先套盾：我的体验时间并不长，有些东西可能研究不够透彻，项目也处在早期状态，我仍然是爱 Fcitx5 的。
 
@@ -34,7 +36,7 @@ categories: Android IME
     - 快速输入没有直接搜索表情/贴图好用（当然我本来就不太懂快速输入就是）
     - 没有单手/悬浮模式
     - Material 了但不 ~~幼~~ ~~诱~~ You
-
+<!--more-->
 ## 简介
 
 先说我怎么想起来要用 Fcitx5 For Android 的，前两天朋友发了个拼音输入法词库的仓库 [CustomPinyinDictionary](https://github.com/wuhgit/CustomPinyinDictionary)，里面提到了对于手机输入法的支持：Fcitx 5 For Android 能直接导入，Gboard 只能使用 Magisk 模块，而且用模块体验也不一定有多好，这里先放着后面再说。没 Root 的我于是对 Fcitx 5 For Android 产生兴趣了。

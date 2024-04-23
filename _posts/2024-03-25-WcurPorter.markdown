@@ -3,6 +3,8 @@ layout: post
 title:  "我来鼓捣鼠标了"
 date:   2024-03-23 21:22:44 +0800
 categories: Curosr 
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 其实是不该鼓捣的，但是我还是想奖励一下自己。  
@@ -15,7 +17,7 @@ categories: Curosr
 比如有人做了[优香](https://www.bilibili.com/video/BV1MH4y1a7i4/)的鼠标指针分享，有人做了 [BA 爱丽丝](https://www.bilibili.com/video/BV1994y1L7YY/)的指针分享。
 本 sensei 非常喜欢，但是呢一看 Windows 的，我的呢我的呢？  
 然后本社恐也不想再去评论区聊这个，再说也不能每次都找别人搞，那还能咋办呢，自己想办法丰衣足食吧。
-
+<!--more-->
 ## 背景
 
 之前我曾经魔改过[别人的一个 fuchsia 的鼠标主题](https://github.com/beeaniebee/fuchsia-cursor-outlined)（说起来也不知道 fuchsia 现在怎么样了）。如果我没记错，这位应该是在 [fuchsia 移植版](https://github.com/ful1e5/fuchsia-cursor)的基础上做了一个描边的版本，但是用了白色描边，我感觉和白色背景不太容易区分，于是做了个粉色描边，中间填充白色的[版本](https://github.com/Steve-Mr/fuchsia-cursor-outlined)(虽然是比较粗糙)。  

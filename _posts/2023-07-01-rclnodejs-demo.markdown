@@ -3,6 +3,8 @@ layout: post
 title:  "一点 ROS2 & rclnodejs 初步尝试"
 date:   2023-07-01 09:41:44 +0800
 categories: ROS2 rclnodejs 
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 # 背景
@@ -10,7 +12,7 @@ categories: ROS2 rclnodejs
 我也不是谦虚，我一个没摸过机器人的怎么就去搞 ROS 了呢？  
 
 我们这届拿到了做基于 ROS 的巡检机器人的小项目，虽然因为都是新手、疫情干扰、和另外的负责人对接效率不高等各种问题最后拿出来的东西并不算好，或者说是很糟，至于「产品」更是还有十万八千里，但是姑且有了一些经验。最近试图慢慢迁移到 ROS2 上（虽然已经和项目无关了），算是一点记录吧。
-
+<!--more-->
 ## 现在有的
 
 现在的成果大概主要就是 [mobile_manipulator_simulated](https://github.com/Steve-Mr/mobile_manipulator_simulated), [scout_simulator_with_robosense](https://github.com/Steve-Mr/scout_simulator_with_robosense), [cartographer_with_rslidar_and_scout](https://github.com/Steve-Mr/cartographer_with_rslidar_and_scout) 这三个仓库，分别是最初跟着教程、基于教程魔改和尝试 cartographer 建图算法搞的。如果有一些经验大概就能发现其实我搞了这么长时间还是搭积木，几乎没有什么自己的东西，所以可以说这东西成为了我的焦虑源泉。

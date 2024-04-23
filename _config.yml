@@ -27,14 +27,37 @@ url: "https://steve-mr.github.io/" # the base hostname & protocol for your site,
 github_username:  Steve-Mr
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: Steve-Mr/minima
 plugins:
   - jekyll-feed
   - jekyll-relative-links
+  - jekyll-toc
 
 relative_links:
   enabled:     true
   collections: true
+
+# Set to `true` to show excerpts on the homepage.
+show_excerpts: true
+
+# Minima specific settings, which are only available from Minima 3.0 onward.
+minima:
+  # Minima skin selection.
+  # Available skins are:
+  # classic	           Default, light color scheme.
+  # dark	             Dark variant of the classic skin.
+  # auto	             Adaptive skin based on the default classic and dark skins.
+  # solarized-light	   Light variant of solarized color scheme.
+  # solarized-dark	   Dark variant of solarized color scheme.
+  # solarized	         Adaptive skin for solarized color scheme skins.
+  skin: auto
+
+  
+  # Minima date format.
+  # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
+  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+  # date_format: "%Y %b-%d"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

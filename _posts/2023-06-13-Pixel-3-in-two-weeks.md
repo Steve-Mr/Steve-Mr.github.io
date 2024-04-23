@@ -3,6 +3,8 @@ layout: post
 title:  "我好羡慕类原生 Android 用户"
 date:   2023-06-13 09:41:44 +0800
 categories: Android 
+excerpt_separator: <!--more-->
+toc: true
 ---
 
 某种意义上的 #近况汇报
@@ -14,7 +16,7 @@ categories: Android
 2. 你们 Realme 要是没在系统上那么拉胯就好了
 
 P3 因为已经没有系统更新了所以直接冲了 PE plus 13（甚至不只是没有系统更新可能已经被软件团队[彻底抛弃](https://twitter.com/MishaalRahman/status/1646959317977817088?s=20)了，总之我试图走 dsu 冲 14 没成，也可能是 pe 的问题？）总之是正常的 Android 13 太幸福了，虽然我对于现在的「个性化」[并不是太满意](https://t.me/maaryIsTyping/5684)。
-
+<!--more-->
 # 问题
 
 1. 后台
