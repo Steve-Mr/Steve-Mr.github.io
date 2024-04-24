@@ -53,6 +53,9 @@ minima:
   # solarized	         Adaptive skin for solarized color scheme skins.
   skin: auto
 
+header_pages:
+  - archive.markdown
+  - about.markdown
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
