@@ -11,6 +11,8 @@ excerpt_separator: <!--more-->
 
 虽然其实还好但是标准流程各种踩坑。简单来说就是，相信[官方文档](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)，但是有些细节还是得自己踩踩。  
 
+<!--more-->
+
 ## 申请域名
 
 最简单的一步。  

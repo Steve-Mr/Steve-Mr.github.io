@@ -17,6 +17,8 @@ toc: true
 3. 我非常想体验 iOS 双拼（开个玩笑
 4. 我在用全面屏并且我想把按键放到离曲面那地方越远越好（半开玩笑
 
+<!--more-->
+
 优点：
 - 基于成熟可扩展的 Linux 输入法 Fcitx5 框架
 - 开源且高自定义度，以至于「双曲面福音」
@@ -36,7 +38,7 @@ toc: true
     - 快速输入没有直接搜索表情/贴图好用（当然我本来就不太懂快速输入就是）
     - 没有单手/悬浮模式
     - Material 了但不 ~~幼~~ ~~诱~~ You
-<!--more-->
+
 ## 简介
 
 先说我怎么想起来要用 Fcitx5 For Android 的，前两天朋友发了个拼音输入法词库的仓库 [CustomPinyinDictionary](https://github.com/wuhgit/CustomPinyinDictionary)，里面提到了对于手机输入法的支持：Fcitx 5 For Android 能直接导入，Gboard 只能使用 Magisk 模块，而且用模块体验也不一定有多好，这里先放着后面再说。没 Root 的我于是对 Fcitx 5 For Android 产生兴趣了。

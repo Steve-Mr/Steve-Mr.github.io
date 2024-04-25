@@ -127,3 +127,15 @@ excerpt_separator: <!--more-->
 好嘛，jekyll-toc 没在支持范围内。解决方法倒也简单，在仓库设置里把 Pages 的编译工具换成 Github Actions 就好了，jekyll 也提供了[教程](https://jekyllrb.com/docs/continuous-integration/github-actions/)。  
 
 到这里算是差不多终于把 toc 搞完了，那么这次主题的折腾也就差不多这样了。
+
+---
+## 2024-24-25 更新  
+
+- 使用 [giscus](https://github.com/giscus/giscus) 增加了评论系统，这个东西好处在于它把 Github 仓库的 Discussion 功能映射到了 Pages 的评论区。虽说其实没啥用就是了。  
+- 为了上面这点，增加了 `_include/custom-post.html` 用来增加自定义的评论区。
+- 把 RSS 订阅的样式和 Social links 的样式统一了。  
+- 找 Gemini 要了 favicon，效果还可以并且用上了。  
+
+  | ![](/asset/minima/fav_icons.png) |
+  | :-------------------------------------: |
+  |            *Gemini 的结果中我比较喜欢的三个*             |

@@ -7,7 +7,9 @@ excerpt_separator: <!--more-->
 toc: true
 ---
 
-Android 13 更新里加入了「应用语言」设置，允许用户单独为应用设置显示语言。但是一些 OEM 深度定制的系统中，这个功能入口却莫名其妙的消失了。对于一些期待着它的用户，手上的设备终于吃上了 Android 13 却找不到「应用语言」这项设置的时候，颇有种煮好了饺子却发现家里没醋了的感觉。Language Selector 的作者就遇上了这个问题：基于 Android 13 的 MIUI 目前没有这个功能的入口，但是他发现通过 ADB 命令 `adb shell cmd locale set-app-locales <PACKAGE_NAME> [--user <USER_ID>] [--locales <LOCALE_INFO>]`仍然可以单独设置应用的语言，也就是说功能还在，只是入口被隐藏了。于是他为这项功能编写了一个「前端」，也就是 Language Selector。
+Android 13 更新里加入了「应用语言」设置，允许用户单独为应用设置显示语言。但是一些 OEM 深度定制的系统中，这个功能入口却莫名其妙的消失了。对于一些期待着它的用户，手上的设备终于吃上了 Android 13 却找不到「应用语言」这项设置的时候，颇有种煮好了饺子却发现家里没醋了的感觉。  
+
+Language Selector 的作者就遇上了这个问题：基于 Android 13 的 MIUI 目前没有这个功能的入口，但是他发现通过 ADB 命令 `adb shell cmd locale set-app-locales <PACKAGE_NAME> [--user <USER_ID>] [--locales <LOCALE_INFO>]`仍然可以单独设置应用的语言，也就是说功能还在，只是入口被隐藏了。于是他为这项功能编写了一个「前端」，也就是 Language Selector。
 <!--more-->
 由于 Language Selector 只是 adb shell 命令的前端，因此首先需要系统底层版本为 Android 13 及以上，此外 Language Selector 需要通过 Shizuku 获得合适的权限来调用 LocaleManager API 进行应用语言的更改。关于 Shizuku 的介绍和使用可以查看[《别被 root 挡在门外：Shizuku 让 Android 玩机更简单 》](https://sspai.com/post/73294)这篇文章.
 

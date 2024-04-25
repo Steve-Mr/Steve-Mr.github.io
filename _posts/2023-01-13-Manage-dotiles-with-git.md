@@ -8,12 +8,12 @@ toc: true
 ---      
   
 本文基于 [Storing dotfiles with Git - This is the way](https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/)  
+<!--more-->
+
 ```bash  
 git init --bare $HOME/.dotfiles  
 ```  
 Bare 仓库需要一个工作树（work-tree）和 git 目录（git-directory）。  
-
-<!--more-->
 
 ```bash  
 git --git-dir=$HOME/.dotfiles --work-tree=$HOME status  
