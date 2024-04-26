@@ -129,7 +129,7 @@ excerpt_separator: <!--more-->
 到这里算是差不多终于把 toc 搞完了，那么这次主题的折腾也就差不多这样了。
 
 ---
-## 2024-24-25 更新  
+## 2024-04-25 更新  
 
 - 使用 [giscus](https://github.com/giscus/giscus) 增加了评论系统，这个东西好处在于它把 Github 仓库的 Discussion 功能映射到了 Pages 的评论区。虽说其实没啥用就是了。  
 - 为了上面这点，增加了 `_include/custom-post.html` 用来增加自定义的评论区。
@@ -139,3 +139,5 @@ excerpt_separator: <!--more-->
   | ![](/asset/minima/fav_icons.png) |
   | :-------------------------------------: |
   |            *Gemini 的结果中我比较喜欢的三个*             |
+
+- 增加了主页的分页，Archive 的懒得搞了。

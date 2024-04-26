@@ -29,10 +29,12 @@ github_username:  Steve-Mr
 # Build settings
 # theme: minima
 remote_theme: Steve-Mr/minima
+
 plugins:
   - jekyll-feed
   - jekyll-relative-links
   - jekyll-toc
+  - jekyll-paginate
 
 relative_links:
   enabled:     true
@@ -40,6 +42,8 @@ relative_links:
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
+paginate: 5
+# paginate_path: "/page-:num/"
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
