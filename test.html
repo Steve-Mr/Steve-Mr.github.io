@@ -1,0 +1,48 @@
+---    
+layout: page
+title: test
+permalink: /test/
+---    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选择配置</title>
+<style>
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>选择配置</h2>
+    <select id="configuration">
+        <option value="10">普通版</option>
+        <option value="20">豪华版</option>
+    </select>
+    <br><br>
+    <label for="people">选择人数:</label>
+    <select id="people">
+        <option value="1">1 人</option>
+        <option value="2">2 人</option>
+    </select>
+    <br><br>
+    <button onclick="calculateTotal()">计算总价</button>
+    <div id="totalPrice"></div>
+</div>
+
+<script>
+    function calculateTotal() {
+        var configurationPrice = parseFloat(document.getElementById("configuration").value);
+        var numberOfPeople = parseInt(document.getElementById("people").value);
+        var totalPrice = configurationPrice * numberOfPeople;
+        document.getElementById("totalPrice").innerText = "总价: " + totalPrice + "元";
+    }
+</script>
+</body>
+</html>
