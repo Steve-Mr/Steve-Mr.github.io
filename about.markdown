@@ -1,23 +1,10 @@
 ---
-layout: page
+layout: base
 title: About
 permalink: /about/
 ---
-你好，这里是 Maary 讲梦话的地方。
+你好，这里是 Maary 讲梦话的地方。没有太多营养，也没有什么华丽辞藻，只是自己编织的梦境罢了，如果能帮到迷途者就更好了。  
 
------自带的 About 关于主题和 Jekyll-----
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+主题经过了我自己的一点魔改：[仓库](https://github.com/Steve-Mr/minima)
 
 
