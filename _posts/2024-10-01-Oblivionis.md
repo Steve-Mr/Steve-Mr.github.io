@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "自嗨记录之二"
-date:   2024-10-01  19:00:00 +0800
+date:   2024-10-03  19:00:00 +0800
 toc: true
 categories: android 
 excerpt_separator: <!--more-->
