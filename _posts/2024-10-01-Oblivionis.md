@@ -159,17 +159,17 @@ excerpt_separator: <!--more-->
 
 1. 应用内手势
 
-应用内的手势主要还是处理照片这页的问题，比如 SlideBox 的上划移动到回收站。在做这个之前是滑动图片的动画，官方的 [Pager in Compose](https://developer.android.com/develop/ui/compose/layouts/pager#scroll-effects) 还给出了示例，遗憾的是示例的效果和代码中实现的效果并不相同。不过好在东拼西凑之下还有算是不错的效果。  
+    应用内的手势主要还是处理照片这页的问题，比如 SlideBox 的上划移动到回收站。在做这个之前是滑动图片的动画，官方的 [Pager in Compose](https://developer.android.com/develop/ui/compose/layouts/pager#scroll-effects) 还给出了示例，遗憾的是示例的效果和代码中实现的效果并不相同。不过好在东拼西凑之下还有算是不错的效果。  
 
-至于上划手势依然有不小的问题，没有做到 SlideBox 那样的图片飞向回收站 Icon 这个先不提。目前的动画只做了向上飞出这部分，下一张图片移动到现在这个位置依然是依靠触发重绘实现的，虽然功能上 OK，但是视觉上仍然是割裂的，大概需要先在动画里把下一张挪过来然后再重绘（但是不会。  
+    至于上划手势依然有不小的问题，没有做到 SlideBox 那样的图片飞向回收站 Icon 这个先不提。目前的动画只做了向上飞出这部分，下一张图片移动到现在这个位置依然是依靠触发重绘实现的，虽然功能上 OK，但是视觉上仍然是割裂的，大概需要先在动画里把下一张挪过来然后再重绘（但是不会。  
 
-<!-- <video controls> <source src="/assets/2024-10-01-Oblivionis/Record_2024-10-03-18-12-46_698ad8eb4a208d88e25d64e99370491c.mp4" type="video/mp4" title="Title"></video> -->
-
-<!-- <video controls src="../assets/2024-10-01-Oblivionis/Record_2024-10-03-18-23-00_698ad8eb4a208d88e25d64e99370491c.mp4" title="Title"></video> -->
+    |<video width="300" controls> <source src="https://github.com/Steve-Mr/Steve-Mr.github.io/raw/refs/heads/main/assets/2024-10-01-Oblivionis/Record_2024-10-03-18-12-46_698ad8eb4a208d88e25d64e99370491c.mp4" type="video/mp4" title="Title"></video>|<video width="300" controls src="https://github.com/Steve-Mr/Steve-Mr.github.io/raw/refs/heads/main/assets/2024-10-01-Oblivionis/Record_2024-10-03-18-23-00_698ad8eb4a208d88e25d64e99370491c.mp4" type="video/mp4" title="Title"></video>|
+    |:--:|:--:|
+    |页面切换动画|页面飞出动画|
 
 2. 预测返回
 
-我依然不知道是哪里的问题。印象中的预测返回只要用了标准库，一个声明就能解决问题。但目前的问题是退出应用的动画是正常的，但是应用内的预测返回动画虽然有但是只是一个渐变过渡而没有缩放，很奇怪但顾不上研究这个了:-(  
+    我依然不知道是哪里的问题。印象中的预测返回只要用了标准库，一个声明就能解决问题。但目前的问题是退出应用的动画是正常的，但是应用内的预测返回动画虽然有但是只是一个渐变过渡而没有缩放，很奇怪但顾不上研究这个了:-(  
 
 ### Jetpack Compose Button 的回马枪
 
