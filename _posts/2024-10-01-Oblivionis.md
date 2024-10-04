@@ -254,8 +254,27 @@ excerpt_separator: <!--more-->
 
 因为东拼西凑所以翻一些技术博客比较多，自然看到了 `Happy Coding!`。于是灵感来了，那就填进去 `Happy Deleting!`。那么问题是，中文界面怎么办。群友关于 Happy Coding 的翻译提出了「码上快乐」，精妙无比但无法照搬，但是大脑唐突拉下摇杆弹出了三个大字：消！消！乐！。好就你了 XD。
 
+### Box 的 MatchParentSize 
+
+帮大忙了。  
+
+突发奇想加了个页面指示器，正好能塞个进度条进去当长按的指示器。然后就遇到问题：这个进度条 `LinearProgressIndicator` 没法限制长度。因为如果在 `Box` 里 `fillMaxSize()` 的结果会是让 `Box` 去占据所有能占据的空间。然后就是折腾经过了：  
+
+1. 写死宽度。效果拔群！然后页面指示器里的页数太长换行布局乱掉。
+2. ConstraintLayout。效果拔群！然后只看了页面指示器够长的时候的效果，页数少了效果也不对。
+3. MatchParentSize。效果拔群！这是丢给 GPT 问怎么办他给我加了一个这个，虽然他给的代码不对，但是我一看这个的说明：
+
+    > Size the element to match the size of the Box after all other content elements have been measured.
+    > 
+    > The element using this modifier does not take part in defining the size of the Box. Instead, it matches the size of the Box after all other children (not using matchParentSize() modifier) have been measured to obtain the Box's size. In contrast, a general-purpose Modifier. fillMaxSize modifier, which makes an element occupy all available space, will take part in defining the size of the Box. Consequently, using it for an element inside a Box will make the Box itself always fill the available space.
+
+    太完美了。
+
 ## 其实一直自嗨也不是办法
 
 自嗨也不是问题，问题是太小作坊了。  
 
 现在的我早就不会什么对整出来个 App 大成功的幻想抱希望了，一方面是市场上的阈值已经非常高了；另一方面则是我的技术事实上只能说龟速提高。及时抛开架构设计、前后端这些不谈，缺乏正经的测试是个关键问题，测试全靠手动跑应用的效率太低了。可惜现在时间上不是那么自由，下次一定。  
+
+---
+UPDATE：增加了 `Box` 的 `MatchParentSize` 修饰符说明，帮大忙了！
