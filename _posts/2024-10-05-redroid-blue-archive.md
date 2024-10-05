@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 前几天还念叨 Redroid 上没法跑 Blue Archive，结果今天心血来潮又折腾了一次居然成了。  
 我不过是代码的搬运工，感谢社区的力量🙏。  
 
-|![alt text](/assets/2024-10-05-redroid-blue-archive/image-1.png)|
+|![alt text](/assets/2024-10-05-redroid-blue-archive/1728137667.png)|
 |:--:|
 |嘿嘿，我的 Hina|
 
