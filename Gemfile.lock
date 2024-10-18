@@ -300,6 +300,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-paginate
   jekyll-relative-links
+  jekyll-sitemap
   jekyll-toc
   json (~> 2.7)
   tzinfo (>= 1, < 3)

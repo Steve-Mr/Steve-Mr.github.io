@@ -38,3 +38,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.8"
 
 gem "json", "~> 2.7"
+
+gem 'jekyll-sitemap'
