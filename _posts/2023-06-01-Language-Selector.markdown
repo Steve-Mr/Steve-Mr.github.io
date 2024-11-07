@@ -5,6 +5,10 @@ date:   2023-06-03 21:24:44 +0800
 categories: Android
 excerpt_separator: <!--more-->
 toc: true
+tags:
+    - Android
+    - App
+    - App Review
 ---
 
 Android 13 更新里加入了「应用语言」设置，允许用户单独为应用设置显示语言。但是一些 OEM 深度定制的系统中，这个功能入口却莫名其妙的消失了。对于一些期待着它的用户，手上的设备终于吃上了 Android 13 却找不到「应用语言」这项设置的时候，颇有种煮好了饺子却发现家里没醋了的感觉。  

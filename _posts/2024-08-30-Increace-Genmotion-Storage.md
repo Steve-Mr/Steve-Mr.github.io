@@ -5,6 +5,10 @@ date:   2024-08-30 09:00:00 +0800
 toc: true
 categories: android 
 excerpt_separator: <!--more-->
+tags:
+    - Genymotion
+    - Android
+    - Emulator
 ---
 
 以下内容整理自：[https://www.reddit.com/r/linux4noobs/comments/bj7ezk/comment/kapd7c7/](https://www.reddit.com/r/linux4noobs/comments/bj7ezk/comment/kapd7c7/)

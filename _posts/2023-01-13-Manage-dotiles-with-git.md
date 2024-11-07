@@ -5,6 +5,10 @@ date:   2023-01-13 08:00:00 +0800
 categories: linux dotfiles       
 excerpt_separator: <!--more-->
 toc: true
+tags:
+    - Git
+    - Linux
+    - Dotfiles
 ---      
   
 本文基于 [Storing dotfiles with Git - This is the way](https://engineeringwith.kalkayan.io/series/developer-experience/storing-dotfiles-with-git-this-is-the-way/)  

@@ -5,6 +5,10 @@ date:   2023-06-13 09:41:44 +0800
 categories: Android 
 excerpt_separator: <!--more-->
 toc: true
+tags:
+    - Android
+    - Hardware
+    - Pixel
 ---
 
 某种意义上的 #近况汇报

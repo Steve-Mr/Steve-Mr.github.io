@@ -5,6 +5,10 @@ date:   2024-03-23 21:22:44 +0800
 categories: Curosr 
 excerpt_separator: <!--more-->
 toc: true
+tags:
+    - Linux
+    - Cursor
+    - Development
 ---
 
 其实是不该鼓捣的，但是我还是想奖励一下自己。  

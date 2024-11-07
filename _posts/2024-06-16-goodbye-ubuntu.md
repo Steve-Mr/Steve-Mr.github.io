@@ -5,6 +5,11 @@ date:   2024-06-19  09:00:00 +0800
 toc: true
 categories: jekyll 
 excerpt_separator: <!--more-->
+tags: 
+   - Linux
+   - Ubuntu
+   - ArchLinux
+   - BTRFS
 ---
 
 终于下定决心从 Ubuntu 迁移到 Arch Linux 上了！  

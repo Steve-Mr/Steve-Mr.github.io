@@ -5,6 +5,9 @@ date:   2024-04-24  09:00:00 +0800
 toc: true
 categories: jekyll 
 excerpt_separator: <!--more-->
+tags:
+  - Jekyll
+  - Minima
 ---
 
 但其实也没整多大改动，并且懒得配图了。

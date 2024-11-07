@@ -5,6 +5,10 @@ date:   2024-06-25 09:00:00 +0800
 toc: true
 categories: linux 
 excerpt_separator: <!--more-->
+tags: 
+  - Linux
+  - Nvidia
+  - X11
 ---
 
 ## 起因

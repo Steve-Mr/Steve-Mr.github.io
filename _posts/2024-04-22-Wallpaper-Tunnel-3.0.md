@@ -4,6 +4,11 @@ title:  "自嗨记录之一"
 date:   2024-04-23  09:00:00 +0800
 toc: true
 categories: Android 
+tags:
+    - Android
+    - App
+    - WallpaperTunnel
+    - Development
 ---
 
 > 造轮子，痛！  

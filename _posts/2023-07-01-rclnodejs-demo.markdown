@@ -5,6 +5,9 @@ date:   2023-07-01 09:41:44 +0800
 categories: ROS2 rclnodejs 
 excerpt_separator: <!--more-->
 toc: true
+tags:
+    - ROS
+    - rclnodejs
 ---
 
 # 背景

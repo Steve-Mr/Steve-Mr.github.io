@@ -28,6 +28,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://maary.top" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Steve-Mr
 
+permalink: /blog/:year/:title:output_ext
+
 # Build settings
 # theme: minima
 remote_theme: Steve-Mr/minima
@@ -47,17 +49,16 @@ show_excerpts: true
 paginate: 5
 # paginate_path: "/page-:num/"
 
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
   # Minima skin selection.
   # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
   # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: auto
+  skin: solarized
 
   header_pages:
     - archive.markdown

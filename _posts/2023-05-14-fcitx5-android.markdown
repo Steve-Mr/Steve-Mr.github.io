@@ -5,6 +5,11 @@ date:   2023-05-14 09:41:44 +0800
 categories: Android IME 
 excerpt_separator: <!--more-->
 toc: true
+tags:
+    - Android
+    - App
+    - App Review
+    - Fcitx5
 ---
 先套盾：我的体验时间并不长，有些东西可能研究不够透彻，项目也处在早期状态，我仍然是爱 Fcitx5 的。
 

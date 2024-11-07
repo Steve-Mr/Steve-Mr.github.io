@@ -5,6 +5,10 @@ date:   2024-04-24  19:00:00 +0800
 toc: true
 categories: jekyll 
 excerpt_separator: <!--more-->
+tags:
+     - Blog
+     - Domain
+     - Github Pages
 ---
 
 一时之间心血来潮，以及因为长久以来随便起的 Github 用户名导致 Github Pages 诡异地址，买了个域名然后设置过来了。  
