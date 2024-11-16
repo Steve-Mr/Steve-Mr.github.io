@@ -2,6 +2,7 @@
 layout: post
 title:  "该魔改这里主题了"
 date:   2024-04-24  09:00:00 +0800
+last_modified_at:   2024-11-16 10:00:00 +0800
 toc: true
 categories: jekyll 
 excerpt_separator: <!--more-->
@@ -147,3 +148,109 @@ tags:
 
 ## 2024-04-29 更新
 - 试图转移到使用仓库本地字体？但是不确定会不会成功或者效果变好。
+
+---
+## 2024-11-10 更新
+最近又折腾了点东西，随便补充一下：
+
+- Sitemap, robots.txt, seo 和 Copyright
+
+> 所以 Google 你为什么不索引！
+
+简单来说以上东西都是为了让 Google 能想起来索引一下我这个站。但是遗憾的是至今只有 https://maary.top 被索引了。  
+
+  - Sitemap: 本来是用 `jekyll-sitemap` 来实现的，但是后面为了更丰富的内容，换了一个[实现](https://github.com/Steve-Mr/Steve-Mr.github.io/blob/main/sitemap.xml)。
+  - robots.txt: 这个更简单了，我已经完全是 Google 你他妈快点来抓取的状态了所以啥都没限制。
+  ```liquid
+  ---
+  layout: none
+  ---
+  User-agent: *
+  Allow: /
+  Sitemap: {{ "{{" }} site.url }}/sitemap.xml
+  ```
+
+  - seo: 这个同样用了最省事的 jekyll-seo-tag 插件。
+  - Copyright: 在 `footer.html` 中增加了一行 `<p>{{ "{{" }} site.author.copyright-year | escape }}-{{ "{{" }} site.time | date: '%Y' }} &#169; {{ "{{" }} site.author.name | escape }} </p>`
+
+- 地址
+
+  这个主要是原来的地址过于繁杂，基本上是 /分类/年/月/日 的状况，于是在 `_config.yml` 中设置了 `permalink:/blog/:year/:title:ouput_ext`，现在的效果直接看地址栏就好了。
+
+- Tags
+  Jekyll 和 liquid 语法本身就支持 Tags，这里主要的任务是展示 Tags 以及按照 Tags 索引。  
+  - 展示：在文章中要显示本篇文章的 Tags，在 Archive 中要显示当前所有的 Tags。  
+    对于在文章中的 Tags 使用一个遍历即可：  
+    ```liquid
+    <br>
+    {{ "{%- if page.tags" }} -%}
+        {{ "{% for tag in page.tags" }} %}
+            <a href="{{ "{{" }} site.baseurl}}/archive.html#{{ "{{" }}tag | slugize}}">
+                #{{  "{{" }} tag }}
+            </a>
+        {{ "{% endfor " }}%}
+    {{ "{%- endif" }}-%}
+    ```  
+    
+    在 Archive 中的 Tags 也是类似的操作：  
+
+    ```html
+    <div id="tags">
+    {{ "{% assign sorted_tags = site.tags | sort"}} %}
+          <p>
+          {{ "{% for tag in sorted_tags" }} %}
+              <a class="post-tag" href="{{ "{{ site.baseurl "}}"}}/tag/{{ "{{ tag[0] | slugify"}} }}">{{ "{{ tag[0]"}} }}</a>
+          {{ "{% endfor" }} %}
+          </p>
+    </div>
+    ```  
+    
+    接下来还需要定义 Tags 的样式：
+    ```sass
+    .post-tag {
+      display: inline-block;
+      background: $code-background-color;
+      padding: 0 .5rem;
+      margin-right: .5rem;
+      margin-bottom: .5rem;
+      border-radius: 4px;
+      color: $text-color;
+      font-size: 90%;
+      &:before {
+        content: "#";
+      }
+      &:hover {
+        text-decoration: none;
+        background: $brand-color;
+        color: $background-color;
+      }
+    }
+    ```
+          
+  - 按 Tags 索引：这里直接使用了 `jekyll-tagging` 插件来实现基于 tag 的索引页面的生成，具体的使用方法参加项目 Readme。  
+  Tag 索引页的布局其实就是按 Tag 筛选过的 Archive 页。
+
+- 折腾 post 布局
+  折腾这东西费了不少劲，而且有些 dirty。主要目的是实现在页面不宽不窄的时候页面的目录不会和内容冲突，顺便一个顺带的效果是在手机排版下也有目录了。
+  1. 首先是给 post.html 的模板去掉了 wrapper，避免页面内容被强制居中，对于像标题、评论的东西，可以在对应元素外面套上 wrapper 格式。
+  2. 定义了 `post-wrapper` 的样式用来显示 toc 和 文章内容，大致思路是使用 flexbox 布局来展示这两个部分。
+  ```sass
+  .post-wrapper {
+    display: flex; /* 使用 Flexbox 布局 */
+    gap: 20px; /* 设置子元素之间的间距 */
+    $first-calculation: calc((100vw - #{$content-width} + #{$spacing-unit}) / 2);
+    $second-calculation: calc($first-calculation - 300px);
+    margin-right: $first-calculation;
+    margin-left: $second-calculation;
+    @media screen and (min-width: $on-large) {
+      $first-calculation: calc((100vw - #{$content-width} + #{$spacing-unit * 2}) / 2);
+      $second-calculation: calc($first-calculation - 300px);
+      margin-right: $first-calculation;
+      margin-left: $second-calculation;
+    }
+    @media screen and (max-width: $on-large) {
+      flex-direction: column; /* 当屏幕宽度较小时，变为垂直布局 */
+    }
+  }
+  ```
+  这里也就是 dirty 的部分了，一些宽度的计算用了硬编码的值，目前似乎没啥问题但是毕竟测试的平台不够多，谁知道会出来什么问题呢🤷‍♂️
