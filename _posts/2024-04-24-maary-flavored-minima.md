@@ -254,3 +254,22 @@ tags:
   }
   ```
   这里也就是 dirty 的部分了，一些宽度的计算用了硬编码的值，目前似乎没啥问题但是毕竟测试的平台不够多，谁知道会出来什么问题呢🤷‍♂️
+
+## 2024-11-25 更新
+
+基本上全是 Pagespeed Insights 闹的，59 -> 71 了。
+
+1. 这次又从 Google Fonts 更换到本地字体了。
+   从 [Noto-Serif-SC-CSS](https://github.com/jfcherng/Noto-Serif-SC-CSS) 毛了文件丢到 `/assets/` 下面然后把相对链接丢 `<head>` 里了。
+2. 给图片全转到 webp 了。
+   
+   ```sh
+   # 将 jpg jepg png 转换为 webp (gif 没转成)
+   find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \) -exec sh -c ' cwebp "$0" -o "${0%.*}.webp"' {} \;
+   # 转 gif
+   find . -type f -iname "*.gif" -exec sh -c 'gif2webp "$0" -o "${0%.*}.webp"' {} \;
+   # 把 markdown 文件里的后缀名替换了
+   find . -type f -name "*.md" -exec sed -i 's/!\[\([^]]*\)\](\([^)]*\)\.\(jpeg\|jpg\|png\|gif\))/![\1](\2.webp)/g' {} \; 
+   # 删除原本的图片
+   find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \) -exec sh -c 'rm "$0"' {} \;
+   ```
