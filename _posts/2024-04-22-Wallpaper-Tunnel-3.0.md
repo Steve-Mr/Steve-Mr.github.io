@@ -18,7 +18,7 @@ tags:
 
 大概是 21 号开始写这个的，本意是觉得真不容易啊可得让我水一篇。不过 22 号早上突然想起来，我最先开始写这个东西好像是四年前的四月，结果一翻仓库记录，头一条 Commit 是当年 4 月 23 号发的，还真是巧了。
 
-![init commit](/asset/WallpaperTunnel3.0/init_commit.png)
+![init commit](/asset/WallpaperTunnel3.0/init_commit.webp)
 
 ## **什么自嗨**
 
@@ -26,7 +26,7 @@ tags:
 那么说自嗨在哪之前，先看看原来 Wallpaper Tunnel 有什么问题：
 
 1. 如果源应用不支持系统标准分享，那么整个流程都断掉。  
-![傻逼张小龙](/asset/WallpaperTunnel3.0/wechat.jpg){: width="200" } 
+![傻逼张小龙](/asset/WallpaperTunnel3.0/wechat.webp){: width="200" } 
 2. 由于开发过程断断续续，代码结构和质量都很差，导致维护困难，同时权限管理一团乱麻。
 3. 在第 2 点的基础上，由于 Google 做出了奇怪的权限改动，适配 Android 13 难度提高。
 4. 在这个 [issue](https://github.com/Steve-Mr/WallpaperTunnel/issues/10) 提到了想直接获取系统壁纸进行编辑。我虽然做了个初步修改（显示启动器图标，然后直接显示当前系统壁纸），但是对这个方式不是很喜欢，不但加重了第 2 点的问题，而且也没办法获取锁屏的壁纸。
@@ -60,7 +60,7 @@ tags:
 老实讲这部分的布局写的比较随意，而且说明信息也不太够，在申请权限之后的一些处理上偷了非常多的懒，但是至少现在把权限这部分抽出来就达到目标了。  
 另外在 Android READ_MEDIA_IAMGES 这个权限在新版本上会让用户选择是全部图片还是部分图片还是不允许，虽然我也不喜欢应用申请各种庞大权限，但是这里不拿到全部图片权限就是无法获取系统壁纸。
 
-![引导流程](/asset/WallpaperTunnel3.0/welcome.png)
+![引导流程](/asset/WallpaperTunnel3.0/welcome.webp)
 
 流程整体就是图上这么个样子，这部分的意义除了更清晰的显示权限，也能让我更清晰地管理权限，适配新 SDK 理论上大概也能更加直观一些，毕竟谁知道今天 Google 又会整出来什么活呢。
 
@@ -71,7 +71,7 @@ tags:
 
 这里其实涉及到了前面提到的问题 1，2 和 4。 4 比较直观不提；2 的话是在于直接 Main Activity 负责的获取系统壁纸的工作分摊给了启动 Activity；1 这个还真得谢谢 Google，因为我本来想的是使用 Files 的那套选择器来选，问题很直观：图片依然在文件夹里，事实上流程并没有简化多少。而这次新的图片选择器能直接根据时间先后顺序选择图片，就让非分享的流程变成了 保存图像 -> 打开应用 -> 选择图像 -> 编辑或直接设置 的流程。
 
-![Start Activity](/asset/WallpaperTunnel3.0/start.png){: width="500" } 
+![Start Activity](/asset/WallpaperTunnel3.0/start.webp){: width="500" } 
 
 虽然你可能看不出来，但是启动 Activity 的界面直接地抄了 Google「壁纸与个性化」。最主要的是选择「锁定屏幕」和「主屏幕」那里，壁纸与个性化里设定成了 Tab，我这里主要为了展示于是直接两个都摆上来。
 
@@ -79,7 +79,7 @@ tags:
 
 编辑器是让我下了大功夫的地方，因此也会是给我造成 Bug 最多的地方，说不定也是最没用的地方。  
 
-![Editor Fragment](/asset/WallpaperTunnel3.0/editor.png){: width="200"}
+![Editor Fragment](/asset/WallpaperTunnel3.0/editor.webp){: width="200"}
 
 先说整体的界面，这个东西其实基本上沿袭了 History Activity 的布局。左上取消，右上确认是为了给一个明确的出口，返回当然可以用，我这里把返回和取消定义成了相同的作用：放弃一切修改回到上个界面；确认就是为了保存进行的修改。  
 中间的预览切换键其实是偷懒的结果。简单来说在 Main Activity 中切换锁屏和主屏壁纸的预览是通过点击壁纸实现的（写完这句之后我又觉得只有这样不行于是加了个指示按钮）。进入编辑器之后，这里其实是在 Main Activity 上覆盖了编辑器的按钮，导致这里的点击监听器失效了，于是设置了这个预览切换键。  
@@ -88,7 +88,7 @@ tags:
 
 1. 模糊和亮度  
 
-    ![](/asset/WallpaperTunnel3.0/blur&brightness.png){: width="500"}
+    ![](/asset/WallpaperTunnel3.0/blur&brightness.webp){: width="500"}
 
     这部分功能没有改变，主要就是把之前合在一起的界面又拆开了。
 
@@ -97,14 +97,14 @@ tags:
     这部分的场景前面也提到了，图片的比例不够，有的图片正好是纯色背景可以直接填颜色，有的塞个模糊背景也不是不行。另外填纯色这个，也可以直接放个横屏的图片进去然后其余部分全部填成纯色来。
 
     2.1. 纯色填充  
-        ![](/asset/WallpaperTunnel3.0/paint.png)
+        ![](/asset/WallpaperTunnel3.0/paint.webp)
         
     这部分的主要问题其实就一个：颜色谁给提一下。我起初问 GPT 他告诉我 Androidx [Palette 库](https://developer.android.com/reference/kotlin/androidx/palette/graphics/Palette)能提取颜色，要了代码直接拿来用，打眼一看效果不错于是画 UI 去了。但是 UI 画完才发现仔细一看不对劲：颜色有小的色差，看来 Palette 还是提取完先自己处理之后才返回吧。不知道这个库和现在的动态取色有没有什么想法上的联系，它从 18 年 1.0 稳定版发布后就没更新过了。  
         那么接下来的问题就有点麻烦了，调库不行，那就暴力提取吧！于是我直接把图像缩放到 128*128 的大小，然后直接统计颜色取前五，显而易见的效率爆炸，所以这里的问题出来了：点击这个按钮的反应时间是最长的。  
         另外可能是没有按比例缩放的原因，有时候取出来的颜色基本上全是类似一个颜色的状态，可用性其实要打问号。  
         
     2.2. 模糊填充  
-        ![](/asset/WallpaperTunnel3.0/paint_blur.png)
+        ![](/asset/WallpaperTunnel3.0/paint_blur.webp)
         这部分其实就是我上面提到仓库的 Kotlin 版本，甚至代码就是我直接拿来找 GPT 「你来给我写个一样的」。问题也和仓库里 Python 版本一样，阴影的实现太野路子了效果不是很行。
 3. 超分辨率
     > AI! AI! AI!  
@@ -112,7 +112,7 @@ tags:
     别的先放在一边，AI 的概念其实是需要一些清理了。你幻觉拉满的 LLM 是 AI，那指着猫说是狗的 CNN 算 AI 吗？现在各种厂商一股脑的冲向 AI 让这水更加浑了。  
     这部分让我头疼老长时间，做这个突出一个「自嗨」：如果说上面的内容填充我大概还会用用，这个超分辨率我大概率还是直接用电脑算了。
     
-    ![](/asset/WallpaperTunnel3.0/waifu2x.png)
+    ![](/asset/WallpaperTunnel3.0/waifu2x.webp)
 
     首先模型用的是 [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)，其实已经有点年头了，但是挺好用的我也懒得找更新的模型了。正好前一段做别的东西摸了下 Meta 和微软搞得 ONNX 运行时，而 Read-ESRGAN 是 Pytorch 模型也有不错的兼容性，于是选了 RealESRGAN_x4plus, RealESRGAN_x2plus 和 RealESRGAN_x4plus_anime 这三个模型来用，要把模型移到手机上搞还是挺麻烦的。
   
@@ -432,7 +432,7 @@ class BlurFragment : Fragment() {
     后面翻了一下有 [KotlinDL](https://github.com/Kotlin/kotlindl) 这个库能实现与桌面上类似的处理，不过感觉好像还是直接把预处理和后处理塞到模型里更方便。  
     在添加预处理和后处理上参考了官方的[教程](https://github.com/microsoft/onnxruntime-extensions/blob/main/onnxruntime_extensions/tools/Example%20usage%20of%20the%20PrePostProcessor.md)，不过我全部使用官方提供的预处理过程，比如把 Resize 和 CenterCrop 去掉了。
 
-    ![](/asset/WallpaperTunnel3.0/model_prepost.png)
+    ![](/asset/WallpaperTunnel3.0/model_prepost.webp)
     右边是添加预处理和后处理后的模型，能看到在 Conv 之前加了好几层。
 1. 量化！  
 遇事不决先量化。
@@ -467,7 +467,7 @@ ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets -
 我们说边到边其实就是应用告诉系统：你有什么导航栏、状态栏无所谓，我要把内容显示在这些东西下面。但是这里的处理是设置了布局中的根视图的 Padding。Padding 这个可以视作视图的内边距，它改变的不是视图的位置，而是视图内容的位置。在这个情况下根视图中的所有内容与根视图的边缘保持这样的距离。感觉似乎还好？但是如果这里放个列表似乎就不太对了。  
 就显示效果来说，在这里设置子视图的 Margin 才是更加合适的选项。Margin 是视图的外边距，其会影响视图的位置。  
 
-![对比](/asset/WallpaperTunnel3.0/edgeToEdge.png){: width="500" }  
+![对比](/asset/WallpaperTunnel3.0/edgeToEdge.webp){: width="500" }  
 
 这里左边就是默认的效果，能看到不管是列表的内容还是 FAB 的阴影都被截断了；而右边是单独设置了 Fab 的 Margin 但是没有设置根视图的 Padding，于是能看到列表的内容到状态栏下面了。  
 
@@ -478,11 +478,11 @@ ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets -
 ## **还想造的轮子**
 
 想造的轮子里面呢，除了学点新东西和完全没谱的生成式之外，扣图我其实真的想做。其实代码里留了个按键，虽然大概率短期内搞不定。  
-![foreground icon](/asset/WallpaperTunnel3.0/foreground.png)  
+![foreground icon](/asset/WallpaperTunnel3.0/foreground.webp)  
 因为有很多图非常好看，比例合适，但是纯白背景。如果能直接给前景抠出来，直接塞个纯色背景进去也能直接当壁纸的。但可惜的地方是，这个东西比超分辨率麻烦多了。  
 
 前一段正好摸过 [U2-Net](https://github.com/xuebinqin/U-2-Net)，是个扣图效果还不错的模型。然后他们新搞的[DIS](https://github.com/xuebinqin/DIS)似乎有更好的效果。但是遇到了一个问题：模型这种东西，没有学特定数据集的话就很麻烦。用其他人提供的在线 Demo 随手找了几张图片试了一下，其实已经很不错了，但是真要去用是不可用的。  
-![Oneline demo](/asset/WallpaperTunnel3.0/dis_demo.png)  
+![Oneline demo](/asset/WallpaperTunnel3.0/dis_demo.webp)  
 
 比如，抠 成 线 稿。  
 

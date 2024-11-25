@@ -26,12 +26,12 @@ tags:
 多说两句，Slidebox 在隔壁 iOS 上大概确实是优秀应用，但是在引导、控件上的 iOS 感也带到了 Android 平台上。（甚至引导界面放了 iPhone 的演示）  
 
 | :--: | :--: | :--: | 
-|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-213857.png)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-214555.png)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-214617.png)|
+|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-213857.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-214555.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-214617.webp)|
 
 而且在这里看着还正常的状态栏，其实用了「沉浸」模式，导航栏倒是没有做「边到边」的支持，于是在有的手机上就会增加一个黑条：
 
 |:--:|:--:|
-|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-21373417.jpg)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-21382826.jpg)|
+|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-21373417.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-21382826.webp)|
 
 虽然在这里嫌弃归嫌弃，但是 Slidebox 在功能上确实没得说，虽然最近做了会员，但是限制也不算大，这方面算是良心了。
 
@@ -39,7 +39,7 @@ tags:
 
 目前实现的主要功能还是怎么删图片，Slidebox 提供的分类归档图片的功能虽然看起来很不错，但是我暂时没有这个需求，于是先放在一边了。毕竟看看标题：这（依然）是个自嗨的项目。  
 
-|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222647.png)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222637.png)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222454.png)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222644.png)|
+|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222647.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222637.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222454.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_20241002-222644.webp)|
 |:--:|:--:|:--:|:--:|
 |启动引导|相册列表|处理图片|应用设置|
 
@@ -80,7 +80,7 @@ tags:
 那么怎么到 `Oblivionis` 的呢？还是前面提到的想法的延续：`「删除」我们的过往其实也是我们一部分记忆的消失`，但那会我其实首先想起来的是哈利波特里的「一忘皆空」咒。虽然感觉对上了，但是似乎程度又有点过了，而且我也绝对算不上哈利波特的死忠粉。就这么寻思了两天，突然想起来了：好像有哪个[蕾丝面具团体](https://zh.moegirl.org.cn/zh-hans/Ave_Mujica)的出场表演有提过「我无惧遗忘」（憋笑）。不过也是去翻了百科才发现原来就是大祥老师。那就愉快地决定了！ 
 
 |:--:|:--:|
-|![alt text](/assets/2024-10-01-Oblivionis/image.png)|![alt text](/assets/2024-10-01-Oblivionis/image-1.png)|
+|![alt text](/assets/2024-10-01-Oblivionis/image.webp)|![alt text](/assets/2024-10-01-Oblivionis/image-1.webp)|
 
 这时才发现包名写的什么玩意，连着包名和应用名字一起换了。顺便一提之前的包名开头都还是 `com.maary`，这次想起来我还有这个域名于是变成了 `top.maary.oblivionis`。
 
@@ -92,7 +92,7 @@ tags:
 
 这么一想不就是瀑布流布局嘛，于是立马想到了 Jetpack Compose 中的 [Flow 布局](https://developer.android.com/develop/ui/compose/layouts/flow)。  
 
-![alt text](/assets/2024-10-01-Oblivionis/flow_row_arrangement_start_default.png){: width="100" }
+![alt text](/assets/2024-10-01-Oblivionis/flow_row_arrangement_start_default.webp){: width="100" }
 
 这是官方的 FlowRow 的示意图，旋转了 90 度作为 FlowColumn 的示意图。粗看似乎完美符合需求，只是人家其实更多是用来给 Chip 之类的控件的，用来展示图片会有点奇怪。（具体遇到的问题我也忘了，总之其实不符合需求。）然后连着搜索挂翻文档才发现原来已经有 LazyVerticalStaggeredGrid 组件能干这个事情了。  
  
@@ -124,19 +124,19 @@ tags:
     1. 最稳妥的：不在状态栏下绘制应用内容，保证状态栏内容正常显示。
     2. 状态栏是你 Google 的事情，我的应用就要边到边：在状态栏下绘制应用内容，状态栏图标看不清拉倒。
 
-        |![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-03-20-57_1df053e4b34404e2d1b64d3b51b3d08a~2.jpg)|
+        |![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-03-20-57_1df053e4b34404e2d1b64d3b51b3d08a~2.webp)|
         |:--:|
         |PixEZ 才不惯着你们 Google|
 
     3. 精细控制：默认状态下状态栏下使用纯色绘制保证显示效果，需要绘制如图片这样的复杂内容时切换到沉浸模式。目前见到的似乎只有下面示意图中的 MyerSplash（Android 端疑似已停更）。
 
-        |![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-03-43-88_d4248e9cb0c84ed87d7376ae8b526aac~2.jpg)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-03-48-64_d4248e9cb0c84ed87d7376ae8b526aac~2.jpg)|
+        |![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-03-43-88_d4248e9cb0c84ed87d7376ae8b526aac~2.webp)|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-03-48-64_d4248e9cb0c84ed87d7376ae8b526aac~2.webp)|
         |:--:|:--:|
         |默认状态|显示图片|
 
     4. 取个中间值吧：在状态栏部分加遮罩，能看到应用内容，状态栏图标的显示也能照顾到，而且省事。`<--` 目前我使用的方式。
 
-        |![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-04-26-75_66dd0d8ad22b5c53ba031f445a49e062~2.jpg)|
+        |![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-12-04-26-75_66dd0d8ad22b5c53ba031f445a49e062~2.webp)|
         |:--:|
         |WallpaperTunnel 里壁纸历史的布局，我还挺喜欢的|
 
@@ -237,7 +237,7 @@ tags:
 
 不要靠近 Color OS，会变的不幸。  
 
-|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-19-18-53-74_0ba066473b79d6e213a1f6f52505e2ee~2.jpg)|
+|![alt text](/assets/2024-10-01-Oblivionis/Screenshot_2024-10-03-19-18-53-74_0ba066473b79d6e213a1f6f52505e2ee~2.webp)|
 |:--:|
 |看看这贴心的拦截启动，那么我通知呢？|
 

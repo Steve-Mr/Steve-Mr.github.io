@@ -69,14 +69,14 @@ tags:
 
 ### Material 了但不 ~~幼~~ ~~诱~~ You
 
-![组合图](/asset/fcitx5/ui.png)
+![组合图](/asset/fcitx5/ui.webp)
 
 直接看图，虽然可能是我的印象出错，但是给我一种当年 Google 拼音输入法的感觉，包括那个主题界面。遗憾的地方也在小标题里了：目前我没有找到关于应用 Monet 主题色的功能，比起来现在华丽胡哨的 Gboard 观感上确实少了点趣味。话说回来，Monet 的支持一方面非常看开发者的个人喜好，另一方面对于一个起步阶段的项目优先级靠后也可以理解。 
 
 ### 自定义程度高到成为曲面屏福音
 
 {:refdef: style="text-align: center;"}
-![主题/键盘设置图](/asset/fcitx5/theme_settings.png){: width="500" }
+![主题/键盘设置图](/asset/fcitx5/theme_settings.webp){: width="500" }
 {: refdef}
 
 除了常规的设置键盘背景、按键边框、亮色暗色主题设置之外（似乎复制现有主题修改的功能还没有做完？），Fcitx5 还给了按键横向和竖向间距的设置以及按键全角半径的设计，理论上做个类似当年全键盘那样的小圆键也可以。
@@ -106,7 +106,7 @@ Fcitx5 在桌面上的英语输入法等于……没有。当然这在桌面上�
 - 双拼方案支持
 
 {:refdef: style="text-align: center;"}
-![双拼方案/键盘支持图像](/asset/fcitx5/double_pinyin.png){: width="500" }
+![双拼方案/键盘支持图像](/asset/fcitx5/double_pinyin.webp){: width="500" }
 {: refdef}
 
 这也是自定义的好处，你有各种输入方案可选，就算没有你也可以自己上手自定义，我在用的自然码自然也被囊括其中，虽然其实这里有一个问题是从桌面版带到手机上的，就是 Fcitx5 有一个自然码的输入法和一个双拼输入法里的自然码布局，我们常说的「自然码」是后者，前者虽然也是自然码布局，但是似乎是要必须用码表的样子？我没太仔细研究其实不是很懂。
@@ -120,7 +120,7 @@ Fcitx5 在桌面上的英语输入法等于……没有。当然这在桌面上�
 - 字符全角半角
 
 {:refdef: style="text-align: center;"}  
-![符号页](/asset/fcitx5/char.png){: width="500" }
+![符号页](/asset/fcitx5/char.webp){: width="500" }
 {: refdef}
 
 这里是我没有理明白的地方，同样 Gboard 举例：什么输入法对应什么样的全角半角符号，英文全半角，中文符号全角数字半角，日语全是全角，非常容易懂。Fcitx5 这边就比较的迷茫，堪比在 Gboard 添加三种及以上语言后点击切语言图标不知道下一个输入法会冒出来啥的迷茫。它给出了一个专门的「全角」Tab，里面所有的符号和数字都是全角，然后如果你需要半角，要点击前面的 Tab。然后是我这边的问题，一是我早期很容易把这个「全角」当成一个按钮，即再点一下就是半角了，但它只是个 Tab；二是我这边似乎在中文下点符号随机进半角或全角，非常迷茫。
@@ -130,7 +130,7 @@ Fcitx5 在桌面上的英语输入法等于……没有。当然这在桌面上�
 这部分其实没啥好说的，我虽然名义上在「学日语」，但是用「替多邻国刷日活」更合适。
   
 {:refdef: style="text-align: center;"} 
-![日语输入法截图](/asset/fcitx5/nihonn.png){: width="500" }
+![日语输入法截图](/asset/fcitx5/nihonn.webp){: width="500" }
 {: refdef}
 
 首先是 Github 版本没有日语选项，然后在 [Jenkins](https://jenkins.fcitx-im.org/job/android/job/fcitx5-android/) 上的最新的 CI 版本搭配同样在 Jenkins 上的 [fcitx5-android-plugin-anthy](https://jenkins.fcitx-im.org/job/android/job/fcitx5-android-plugin-anthy/) 可以实现日语输入，~~但是目前我似乎没有找到选词窗口，可能是早期版本或者我不会用？~~ 谢谢 [@reiuyfan](https://t.me/reiuyfan) 提醒，是用空格来选词。但是这套插件系统其实挺不错的，如果能够有社区支持其实能搞出来很多玩法。
@@ -168,7 +168,7 @@ Fcitx5 for Android 其实挺不错的，对上 Gboard 吃亏只能说「奈何�
 ## 彩蛋（大嘘
 
 {:refdef: style="text-align: center;"}
-![origin os](/asset/fcitx5/foem.png){: width="500" }
+![origin os](/asset/fcitx5/foem.webp){: width="500" }
 {: refdef}
 
 你们大厂能不能别天天魔改了。

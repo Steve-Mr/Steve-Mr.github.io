@@ -15,7 +15,7 @@ tags:
 终于下定决心从 Ubuntu 迁移到 Arch Linux 上了！  
 虽然其实要做的事情还有很多。
 
-![Arch!](/assets/2024-06-16-goodbye-ubuntu/1718541975.png){:width=500} 
+![Arch!](/assets/2024-06-16-goodbye-ubuntu/1718541975.webp){:width=500} 
 
 <!--more-->
 
@@ -23,7 +23,7 @@ tags:
 
 实际上往回看，我断断续续的十多年 Linux 相关经验全是 Ubuntu 系的：Ubuntu、Kubuntu、Ubuntu Gnome、Elementary OS、Ubuntu Mate。甚至当年最早开始摸 Ubuntu 还是用的所谓 "Wubi" 安装器：像安装一个 exe 一样在 Windows 下安装 Ubuntu，甚至 Ubuntu 使用的文件系统都是 NTFS。此外卸载的时候也是在 Windows 的控制中心卸载。  
 
-| ![alt text](/assets/2024-06-16-goodbye-ubuntu/image.png){:width=500} |
+| ![alt text](/assets/2024-06-16-goodbye-ubuntu/image.webp){:width=500} |
 | :-------------------------------------: |
 |*Wubi 安装器的界面，图源[官方帮助页面](https://help.ubuntu.com/community/Wubi)*|
 
@@ -35,7 +35,7 @@ Ubuntu 是很成熟的发行版了，在数落 Ubuntu 之前还是念点它的�
 
 首先是图形化的安装界面，除了手动分区会麻烦一点（但是现在即使分区也有自动安装成双系统的选项，不用手动分区）。  
 
-|![alt text](/assets/2024-06-16-goodbye-ubuntu/image-1.png){: width=300 } ![alt text](/assets/2024-06-16-goodbye-ubuntu/image-2.png){: width=300 } |
+|![alt text](/assets/2024-06-16-goodbye-ubuntu/image-1.webp){: width=300 } ![alt text](/assets/2024-06-16-goodbye-ubuntu/image-2.webp){: width=300 } |
 | :---: |  
 |*24.04 正式启用的基于 Flutter 的安装器。图源 [OMG Ubuntu](https://www.omgubuntu.co.uk/2024/04/ubuntu-24-04-released)*|
 
@@ -55,7 +55,7 @@ Ubuntu 是很成熟的发行版了，在数落 Ubuntu 之前还是念点它的�
 
       但是还不只是新特性的问题，点版本更新的系统中的系统的库和工具不够新，导致其在很多时候也**吃不上最新版本的软件**。
 
-      |![alt text](/assets/2024-06-16-goodbye-ubuntu/image-3.png)|
+      |![alt text](/assets/2024-06-16-goodbye-ubuntu/image-3.webp)|
       | :--: |
       |[Fcitx5 的版本状态](https://github.com/fcitx/fcitx5)，即使是最新的 Ubuntu 24.04 上 Fcitx5 的版本也是落后的|  
 
@@ -94,7 +94,7 @@ Ubuntu 是很成熟的发行版了，在数落 Ubuntu 之前还是念点它的�
 
 迁移的目标是 Arch Linux，比较热门的滚动更新发行版：几乎不用担心软件的版本是旧的，而是需要担心给系统滚炸了。
 
-|![alt text](../assets/2024-06-16-goodbye-ubuntu/image-4.png){: width=400} |
+|![alt text](../assets/2024-06-16-goodbye-ubuntu/image-4.webp){: width=400} |
 | :--: |
 | 当然有很多系统选择的 Meme |
 

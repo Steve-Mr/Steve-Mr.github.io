@@ -41,7 +41,7 @@ tags:
 
 这部分起始在项目的 `_config.yml` 中设置 minima: skin: auto 就好了，也有 solarized 版本但是我一直对于那个配色不是很感冒。  
 
-| ![](/asset/minima/auto.png){:width=500} |
+| ![](/asset/minima/auto.webp){:width=500} |
 | :-------------------------------------: |
 |            *亮色和暗色效果*             |
 
@@ -140,7 +140,7 @@ tags:
 - 把 RSS 订阅的样式和 Social links 的样式统一了。  
 - 找 Gemini 要了 favicon，效果还可以并且用上了。  
 
-  | ![](/asset/minima/fav_icons.png) |
+  | ![](/asset/minima/fav_icons.webp) |
   | :-------------------------------------: |
   |            *Gemini 的结果中我比较喜欢的三个*             |
 

@@ -115,6 +115,6 @@ ArchWiki 是这么说的：
 
 主要的设置就是上面两个，顺带还有一个额外效果：我的 Firefox 硬件加速正常了。这部分的设置除了 ArchWiki 还可以参考 nvidia-vaapi-driver 的 [README](https://github.com/elFarto/nvidia-vaapi-driver/#firefox)。
 
-|![alt text](/assets/2024-06-24-nvidia-reverse-prime/image.png)|
+|![alt text](/assets/2024-06-24-nvidia-reverse-prime/image.webp)|
 |:--:|
 |现在终于用上 Nvidia 的硬件加速了|

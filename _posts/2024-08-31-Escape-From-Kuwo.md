@@ -30,7 +30,7 @@ Bug 放到一边，总之现在数据库准备好了，不过想必各位已经�
 
 由于我忘了放在一边 Root 过的像素，于是用了非 Root 的方法：使用 ONPatch 修补酷我音乐客户端以注入`文件提供者`，其作用就是在使用系统的 FilesProvider 的时候酷我的内部数据入口就会展示在侧边栏中，就像下面这里的「错误报告」。
 
-![alt text](/assets/2024-08-31-Escape-From-Kuwo/Screenshot_2024-08-31-18-38-24-01_176161be900e0e29934afca83eb113f8~2.jpg)
+![alt text](/assets/2024-08-31-Escape-From-Kuwo/Screenshot_2024-08-31-18-38-24-01_176161be900e0e29934afca83eb113f8~2.webp)
 
 ## 从数据库导出 csv
 

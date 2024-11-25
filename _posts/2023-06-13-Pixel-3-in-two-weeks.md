@@ -44,7 +44,7 @@ P3 因为已经没有系统更新了所以直接冲了 PE plus 13（甚至不只
 然后是内核，虽然南哥让我可以刷刷内核玩玩，但是扫了一眼似乎没有 P3 的 13 内核暂时没搞，不过倒是有刷官方 12 的内核的打算，但是还没搞。其他的先后折腾过 uperf 和 FKM 不过都没有什么非常抓马的效果所以现在啥也没用。
 
 {:refdef: style="text-align: center;"}
-![在用 Magisk 模块列表](/asset/P3/Magisk.png){: width="500" }
+![在用 Magisk 模块列表](/asset/P3/Magisk.webp){: width="500" }
 {: refdef}
 
 # 其他有的没的
