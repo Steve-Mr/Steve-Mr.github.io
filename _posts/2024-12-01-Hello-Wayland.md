@@ -13,7 +13,7 @@ tags:
 我！终于！迁移到 Wayland 了！  
 *虽然我现在已经不知道为啥要迁移了。
 
-|![alt text](/assets/2024-12-01-Hello-Wayland/image.png)|
+|![alt text](/assets/2024-12-01-Hello-Wayland/image.webp)|
 | :--: |
 |现在是 WM: Sway (Wayland) 了！|
 
@@ -250,7 +250,7 @@ Waybar 好是好，但是没有那种 Theme Collection 还是有点麻烦的。�
 我在 i3 上用的是 [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)，算是基于 `i3lock-color` 做的一套脚本，遗憾的是他们同样暂时没有支持 Wayland 的打算。于是听朋友推荐转向了 [hyprlock](https://github.com/hyprwm/hyprlock)，边翻 wiki 边写配置，最后效果其实不是很满意，但是字体确实不好调整。  
 
 |:--:|
-|![alt text](/assets/2024-12-01-Hello-Wayland/image-1.png)|
+|![alt text](/assets/2024-12-01-Hello-Wayland/image-1.webp)|
 
 ### Rofi
 
