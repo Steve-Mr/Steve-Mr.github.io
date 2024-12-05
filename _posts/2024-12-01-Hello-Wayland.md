@@ -2,6 +2,8 @@
 layout: post
 title: "Hello, Sway"
 date: 2024-12-03 22:00:00 +0800
+sitemap:
+  lastmod: 2024-12-05 21:30:00 +0800
 toc: true 
 excerpt_separator: <!--more-->
 tags:
@@ -227,7 +229,20 @@ Wayland 是一个旨在替代 X 窗口系统的显示服务器协议。虽然 Wa
   output HDMI-A-1 pos 1920 0
   ```
 4. 对于浮动窗口的规则，因为 Wayland 和 X11 在窗口属性之间的区别，基本上来说要从原来的 `class` 关键词换成 `app_id` 关键词，不过对于运行在 `Xwayland` 下的程序不需要更改。
-5. Sway 不再需要 picom 之类的工具，而是内置了类似的功能。之前使用的 picom 设置非焦点窗口自动半透明就得在 Sway 里设置了，在 [sway-contrib](https://github.com/OctopusET/sway-contrib) 仓库里有可用的工具：`exec /usr/share/sway-contrib/inactive-windows-transparency.py --opacity 0.85` 
+5. Sway 不再需要 picom 之类的工具，而是内置了类似的功能。之前使用的 picom 设置非焦点窗口自动半透明就得在 Sway 里设置了，在 [sway-contrib](https://github.com/OctopusET/sway-contrib) 仓库里有可用的工具：`exec /usr/share/sway-contrib/inactive-windows-transparency.py --opacity 0.85`  
+
+    ---
+    2024/12/05 更新：sway-contrib 已经不太够了，原因在于所有的非焦点窗口都会被设置半透明——于是 PiP 和在播视频的网页遭了殃。  
+    解法也简单：设置规则，遇到符合规则的窗口就设置其透明度 100%。`inactive-windows-transparency.py` 的代码足够简洁改起来也很方便，这里是加入了下面的函数来实现的：  
+
+    <iframe frameborder="0" scrolling="no" style="width:100%; height:415px;" allow="clipboard-write" src="https://emgithub.maary.top/iframe.html?target=https%3A%2F%2Fgithub.com%2FSteve-Mr%2Fdotfiles%2Fblob%2F24ae343cb2ede2f4ee06a7a2255596326b514d40%2F.config%2Fsway%2Fscripts%2Finactive-windows-opacity.py%23L15-L30&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+
+    剩下的就是调整逻辑了，这部分就更简单了，在之前所有直接调整透明度的位置都塞一个规则判断：  
+
+    <iframe frameborder="0" scrolling="no" style="width:100%; height:163px;" allow="clipboard-write" src="https://emgithub.maary.top/iframe.html?target=https%3A%2F%2Fgithub.com%2FSteve-Mr%2Fdotfiles%2Fblob%2F24ae343cb2ede2f4ee06a7a2255596326b514d40%2F.config%2Fsway%2Fscripts%2Finactive-windows-opacity.py%23L64-L67&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+
+    ---
+
 6. 我之前用来设置壁纸的 `nitrogen` 在 wayland 下面也没法用了，于是抄朋友的切换到了 [swww](https://github.com/LGFae/swww)。
 7. 鼠标设置同样抄朋友的用了 [nwg-look](https://github.com/nwg-piotr/nwg-look)。
 8. 在 i3 中使用的 `for_window [floating] sticky enable` 规则不起作用了，这条的作用是让所有的浮动窗口都能跨 workspace 显示，类似于 pin 到了屏幕上。解决办法是比较极端的 `for_window [app_id=".*"] sticky enable` 。
