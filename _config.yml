@@ -34,6 +34,13 @@ permalink: /blog/:year/:title:output_ext
 # theme: minima
 remote_theme: Steve-Mr/minima
 
+# markdown: kramdown
+kramdown:
+  parse_block_html: true
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
 plugins:
   - jekyll-feed
   - jekyll-relative-links

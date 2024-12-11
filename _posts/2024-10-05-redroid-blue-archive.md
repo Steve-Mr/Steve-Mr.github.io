@@ -32,9 +32,9 @@ sudo python redroid.py -a 11.0.0 -gn
 （可能需要 `lzip` 和 `vim` 的依赖，参考正在使用的发行版的安装方法。）
 4. 运行容器
 <details>
-        <summary>docker run</summary>
+<summary markdown="span">docker run</summary>
 
-    {% highlight shell %}
+```shell
     ## 运行容器
     sudo docker run -itd --rm --privileged --name redroid_patched \               
         -v ~/Android/data11:/data \
@@ -52,7 +52,7 @@ sudo python redroid.py -a 11.0.0 -gn
 
     ## 连接 scrcpy
     scrcpy --stay-awake --video-bit-rate=20M --audio-codec=aac --audio-encoder='OMX.google.aac.encoder'
-    {% endhighlight %}
+ ```
 </details>
 
 <!--more-->
@@ -83,7 +83,7 @@ Play 服务的问题已经又 redroid-scipt 解决了，当然我遇到了 `The 
 然后则是补丁，redroid-script 似乎从 waydroid_script 获得了灵感，但是其使用的 libndk 版本似乎较老，需要更换为 waydroid_script 使用的版本。修改的主要是链接、MD5 和文件名。  
 
 <details>
-    <summary>链接、MD5 和文件名的修改</summary>
+    <summary markdown="span">链接、MD5 和文件名的修改</summary>
 
 {% highlight git %}
 -  dl_link = "https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/181d9290a69309511185c4417ba3d890b3caaaa8.zip"
@@ -101,7 +101,7 @@ Play 服务的问题已经又 redroid-scipt 解决了，当然我遇到了 `The 
 接下来则是重头戏：Docker 的机制让我们很难在容器运行后再对容器内的系统文件打补丁，因此需要直接生成打过补丁的镜像。  
 
 <details>
-    <summary>patch.py</summary>
+    <summary markdown="span">patch.py</summary>
 
 {% highlight python %}
 import os

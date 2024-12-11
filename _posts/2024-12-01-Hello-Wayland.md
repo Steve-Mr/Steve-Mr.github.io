@@ -131,9 +131,9 @@ Wayland 是一个旨在替代 X 窗口系统的显示服务器协议。虽然 Wa
 从 i3 转向 Sway 的迁移其实很早就开始了，但是一直到现在才算正经完成。之前是直接上了 Python 脚本，理所当然的是找 ChatGPT 要的。
 
 <details>
-  <summary><b>i3toSway.py</b></summary>
+<summary markdown="span"><b>i3toSway.py</b></summary>
 
-  {% highlight python %}
+```python
     import re
     import shutil
 
@@ -211,7 +211,7 @@ Wayland 是一个旨在替代 X 窗口系统的显示服务器协议。虽然 Wa
     # process_i3wm_config('/home/maary/.config/sway/config')
     process_i3wm_config_set('/home/maary/.config/sway/config')
 
-  {% endhighlight %}
+```
 
 </details>
 
@@ -228,8 +228,8 @@ Wayland 是一个旨在替代 X 窗口系统的显示服务器协议。虽然 Wa
   output eDP-1 pos 0 0 
   output HDMI-A-1 pos 1920 0
   ```
-4. 对于浮动窗口的规则，因为 Wayland 和 X11 在窗口属性之间的区别，基本上来说要从原来的 `class` 关键词换成 `app_id` 关键词，不过对于运行在 `Xwayland` 下的程序不需要更改。
-5. Sway 不再需要 picom 之类的工具，而是内置了类似的功能。之前使用的 picom 设置非焦点窗口自动半透明就得在 Sway 里设置了，在 [sway-contrib](https://github.com/OctopusET/sway-contrib) 仓库里有可用的工具：`exec /usr/share/sway-contrib/inactive-windows-transparency.py --opacity 0.85`  
+1. 对于浮动窗口的规则，因为 Wayland 和 X11 在窗口属性之间的区别，基本上来说要从原来的 `class` 关键词换成 `app_id` 关键词，不过对于运行在 `Xwayland` 下的程序不需要更改。
+2. Sway 不再需要 picom 之类的工具，而是内置了类似的功能。之前使用的 picom 设置非焦点窗口自动半透明就得在 Sway 里设置了，在 [sway-contrib](https://github.com/OctopusET/sway-contrib) 仓库里有可用的工具：`exec /usr/share/sway-contrib/inactive-windows-transparency.py --opacity 0.85`  
 
     ---
     2024/12/05 更新：sway-contrib 已经不太够了，原因在于所有的非焦点窗口都会被设置半透明——于是 PiP 和在播视频的网页遭了殃。  
@@ -243,9 +243,9 @@ Wayland 是一个旨在替代 X 窗口系统的显示服务器协议。虽然 Wa
 
     ---
 
-6. 我之前用来设置壁纸的 `nitrogen` 在 wayland 下面也没法用了，于是抄朋友的切换到了 [swww](https://github.com/LGFae/swww)。
-7. 鼠标设置同样抄朋友的用了 [nwg-look](https://github.com/nwg-piotr/nwg-look)。
-8. 在 i3 中使用的 `for_window [floating] sticky enable` 规则不起作用了，这条的作用是让所有的浮动窗口都能跨 workspace 显示，类似于 pin 到了屏幕上。解决办法是比较极端的 `for_window [app_id=".*"] sticky enable` 。
+3. 我之前用来设置壁纸的 `nitrogen` 在 wayland 下面也没法用了，于是抄朋友的切换到了 [swww](https://github.com/LGFae/swww)。
+4. 鼠标设置同样抄朋友的用了 [nwg-look](https://github.com/nwg-piotr/nwg-look)。
+5. 在 i3 中使用的 `for_window [floating] sticky enable` 规则不起作用了，这条的作用是让所有的浮动窗口都能跨 workspace 显示，类似于 pin 到了屏幕上。解决办法是比较极端的 `for_window [app_id=".*"] sticky enable` 。
 
 ### Waybar
 

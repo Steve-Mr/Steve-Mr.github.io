@@ -185,9 +185,9 @@ tags:
 在 StackOverflow 上看了不少方法，还是直接看怎么解决的吧：  
 
 <details>
-    <summary>Jetpack Compose Button 识别长按</summary>
+<summary markdown="span">Jetpack Compose Button 识别长按</summary>
 
-{% highlight kotlin %}
+```kotlin
     val interactionSource = remember { MutableInteractionSource() }
 
     val viewConfiguration = LocalViewConfiguration.current
@@ -229,7 +229,7 @@ tags:
             contentDescription = stringResource(id = R.string.mark_this_to_delete),
         )
     }
-{% endhighlight %}
+```
 
 </details>
 
