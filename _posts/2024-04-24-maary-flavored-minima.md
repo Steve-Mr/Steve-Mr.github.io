@@ -3,7 +3,7 @@ layout: post
 title: "该魔改这里主题了"
 date: 2024-04-24 09:00:00 +0800
 sitemap:
-  lastmod: 2024-11-25 22:00:00 +0800
+  lastmod: 2024-12-13 23:00:00 +0800
 toc: true
 categories: jekyll 
 excerpt_separator: <!--more-->
@@ -281,3 +281,4 @@ tags:
    1. 在 `post-base.html` 的顶部增加了 `<div id="top"></div>` 也就是后面返回的锚点。
    2. 在 `post.html` 中的页面底部增加了 `<a href="#top" class="top">返回顶部</a>`，这样点击之后就会回到顶端。
 2. 调整了分页的名称，这里主要依靠 `jekyll-seo-tag` 的特性，在 `_config.yml` 中增加 `seo_paginator_message: ""` 来避免出现 `page x of y` 这样的前缀。 
+3. 增加了字数统计直接使用 liquid 语法 `{{ post.content | strip_html | number_of_words: "auto" }} 字`，注意这里 `auto` 是必要的，这样会使其能够以正确地的方式统计 CJK。
