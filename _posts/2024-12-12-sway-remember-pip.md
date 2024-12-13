@@ -24,9 +24,11 @@ tags:
 
 </details>
 
+<!--more-->
+
 ## 问题
 
-Firefox 最近在 Labs 增加了个功能：[切换标签页的时候自动将当前食品 PIP](https://blog.nightly.mozilla.org/2024/08/26/streamline-your-screen-time-with-auto-open-picture-in-picture-and-more-these-weeks-in-firefox-issue-166/)。虽然这个特性确实有时候会整点乌龙，但是整体还是非常好用的。不过在我[切换到 Sway](/2024-12-01-Hello-Wayland.md) 之后遇到了问题：Firefox 的 PIP 既不会记忆上次的窗口大小也不会记忆位置。  
+Firefox 最近在 Labs 增加了个功能：[切换标签页的时候自动将当前视频 PIP](https://blog.nightly.mozilla.org/2024/08/26/streamline-your-screen-time-with-auto-open-picture-in-picture-and-more-these-weeks-in-firefox-issue-166/)。虽然这个特性确实有时候会整点乌龙，但是整体还是非常好用的。不过在我[切换到 Sway](/2024-12-01-Hello-Wayland.md) 之后遇到了问题：Firefox 的 PIP 既不会记忆上次的窗口大小也不会记忆位置。  
 
 于是搜到了类似的 [Bug 反馈](https://bugzilla.mozilla.org/show_bug.cgi?id=1767414)，说明至少不是我犯了低级的配置错误。但是坏消息如下：  
 
