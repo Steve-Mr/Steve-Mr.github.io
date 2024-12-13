@@ -20,7 +20,7 @@ tags:
 这是代码
 </summary>
 
-<script src="https://emgithub.maary.top/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FSteve-Mr%2Fdotfiles%2Fblob%2Fmain%2F.config%2Fsway%2Fscripts%2Fremember-pip.py&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:2851px;" allow="clipboard-write" src="https://emgithub.maary.top/iframe.html?target=https%3A%2F%2Fgithub.com%2FSteve-Mr%2Fdotfiles%2Fblob%2Fmain%2F.config%2Fsway%2Fscripts%2Fremember-pip.py&style=default&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
 
 </details>
 

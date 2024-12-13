@@ -59,6 +59,8 @@ paginate: 5
 tag_page_layout: tag_page
 tag_page_dir: tag
 
+seo_paginator_message: ""
+
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
   # Minima skin selection.
