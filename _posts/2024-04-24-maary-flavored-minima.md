@@ -274,3 +274,10 @@ tags:
    # 删除原本的图片
    find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \) -exec sh -c 'rm "$0"' {} \;
    ```
+
+## 2024-12-13 更新
+
+1. 增加了「返回顶部」的链接，放在页面最底部。实现方式很简单：
+   1. 在 `post-base.html` 的顶部增加了 `<div id="top"></div>` 也就是后面返回的锚点。
+   2. 在 `post.html` 中的页面底部增加了 `<a href="#top" class="top">返回顶部</a>`，这样点击之后就会回到顶端。
+2. 调整了分页的名称，这里主要依靠 `jekyll-seo-tag` 的特性，在 `_config.yml` 中增加 `seo_paginator_message: ""` 来避免出现 `page x of y` 这样的前缀。 

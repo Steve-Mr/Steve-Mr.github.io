@@ -54,7 +54,7 @@ relative_links:
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
 paginate: 5
-# paginate_path: "/page-:num/"
+paginate_path: "/blog/page:num/"
 
 tag_page_layout: tag_page
 tag_page_dir: tag
