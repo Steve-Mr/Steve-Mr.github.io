@@ -47,6 +47,7 @@ plugins:
   - jekyll-toc
   - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-github-chart
 
 relative_links:
   enabled:     true

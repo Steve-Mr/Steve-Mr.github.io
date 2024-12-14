@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
   gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
+  gem 'jekyll-github-chart'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -43,3 +44,5 @@ gem "webrick", "~> 1.8"
 gem "json", "~> 2.7"
 
 gem 'jekyll-sitemap'
+
+gem 'githubchart', '~> 4.0'
