@@ -74,6 +74,9 @@ minima:
     - archive.markdown
     - about.markdown
 
+sass:
+  quiet_deps: true
+
 # Generate social links in footer.
   social_links:
   #  - { platform: devto,          user_url: "https://dev.to/jekyll" }
