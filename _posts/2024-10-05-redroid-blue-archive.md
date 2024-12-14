@@ -83,7 +83,7 @@ Play 服务的问题已经又 redroid-scipt 解决了，当然我遇到了 `The 
 然后则是补丁，redroid-script 似乎从 waydroid_script 获得了灵感，但是其使用的 libndk 版本似乎较老，需要更换为 waydroid_script 使用的版本。修改的主要是链接、MD5 和文件名。  
 
 <details>
-    <summary markdown="span">链接、MD5 和文件名的修改</summary>
+  <summary markdown="span">链接、MD5 和文件名的修改</summary>
 
 {% highlight git %}
 -  dl_link = "https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/181d9290a69309511185c4417ba3d890b3caaaa8.zip"
@@ -101,7 +101,7 @@ Play 服务的问题已经又 redroid-scipt 解决了，当然我遇到了 `The 
 接下来则是重头戏：Docker 的机制让我们很难在容器运行后再对容器内的系统文件打补丁，因此需要直接生成打过补丁的镜像。  
 
 <details>
-    <summary markdown="span">patch.py</summary>
+  <summary markdown="span">patch.py</summary>
 
 {% highlight python %}
 import os
