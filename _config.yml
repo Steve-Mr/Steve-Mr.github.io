@@ -17,6 +17,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+sass:
+  quiet_deps: true
+  silence_deprecation: import
+  
 author:
   name: Maary
   copyright-year: 2023
@@ -55,7 +59,7 @@ relative_links:
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
-paginate: 5
+paginate: 8
 paginate_path: "/blog/page:num/"
 
 tag_page_layout: tag_page
@@ -74,9 +78,6 @@ minima:
   header_pages:
     - archive.markdown
     - about.markdown
-
-sass:
-  quiet_deps: true
 
 # Generate social links in footer.
   social_links:

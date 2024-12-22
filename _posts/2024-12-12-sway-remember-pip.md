@@ -160,7 +160,7 @@ swaymsg "move position $new_x $new_y"
 
 得益于 Sway 和 i3 的兼容性，i3ipc-python 库也支持 Sway，因此可以直接摸过来用。然后理所当然的找 GPT 要代码了，顺便还出发了 ChatGPT 的 Canvas 特性。  
 
-![ChatGPT Canvas](/assets/2024-12-12-sway-remember-pip/image.png)
+![ChatGPT Canvas](/assets/2024-12-12-sway-remember-pip/image.webp)
 
 不过这次有些逻辑最后还是自己去调整，而且有些地方的逻辑其实感觉不太对劲，但是既然现在能用也就懒得调整了。设置好可执行权限之后在 Sway 配置里加上 `exec remember-pip.py`，代码直接丢下面不折叠了。  
 
