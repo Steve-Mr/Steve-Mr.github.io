@@ -70,6 +70,9 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-github-chart (0.1.2)
       jekyll
+    jekyll-lazy-load-image (0.3.3)
+      jekyll (>= 3.8)
+      nokogiri (~> 1.8)
     jekyll-paginate (1.1.0)
     jekyll-relative-links (0.7.0)
       jekyll (>= 3.3, < 5.0)
@@ -166,6 +169,7 @@ DEPENDENCIES
   jekyll (~> 4.3.4)
   jekyll-feed (~> 0.12)
   jekyll-github-chart
+  jekyll-lazy-load-image
   jekyll-paginate
   jekyll-relative-links
   jekyll-remote-theme
