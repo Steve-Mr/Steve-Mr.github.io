@@ -289,4 +289,6 @@ tags:
 
 下面是个测试：  
 
-「这是一个『标点挤压测试』」，来看看（依靠字体实现）！
+「这是一个『标点挤压测试』」，来看看（依靠字体实现）！  
+
+顺便用 [jekyll-lazy-load-image](https://github.com/kenchan0130/jekyll-lazy-load-image) 和 [vanilla-lazyload](https://github.com/verlok/vanilla-lazyload) 做了图片的延迟加载。
