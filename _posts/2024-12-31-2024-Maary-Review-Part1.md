@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2024 Maary Review: Part1"
+title: "2024 Maary Review"
 date: 2024-12-22 17:05:00 +0800
 sitemap:
   lastmod: 
@@ -25,7 +25,7 @@ tags:
 今天新建文件是 12 月 8 号，希望按时给 31 号的时候写完。  
 这次不但延续又臭又长，而且还没有醋只有饺子。  
 
-不过也有不一样的地方，为了让目录更加详细直接分成三部分了。这里是第一部分，主要是今年看了点啥。    
+<!-- 不过也有不一样的地方，为了让目录更加详细直接分成三部分了。这里是第一部分，主要是今年看了点啥。     -->
 
 <!--more-->
 
@@ -143,6 +143,356 @@ tags:
 |![酣畅淋漓的赤屎](/assets/2024-12-31-2024-Maary-Review/image-19.webp){: width="30%" }|
 |你知道的，大赤老师并没有那么会收尾。<br/>你把笔给横枪得了。<br/>惊世智慧也不是角色的问题，只能说作者瞎搞，为所有的角色感到不值。|
 
+## 今年用了啥
 
-[Part 2 在这里](2024-12-31-2024-Maary-Review-Part2.md)。  
-[Part 3 在这里](2024-12-31-2024-Maary-Review-Part3.md)。  
+### 设备相关
+
+#### Pixel 3 的 Android 14
+
+  在 Pixel 3 上吃到 Android 14 啦！  
+
+  用的是 helluvaOS，但是对这个 ROM 的印象并不好，本来给出的下载链接就有坏链，然后在说明文档中完全不说人话，突出一种纯粹的自嗨。当然这个 ROM 是有好处的：它带上了各种能够给 Pixel 3 用的最新特性，比如即圈即搜。但是最新特性也有代价：它直接给手机模拟成了 Pixel 7。于是就会出现如下的情况  
+  > Google Play: 你是 Pixel 7 啊，来这里有个 Google Camera 9.x 的更新快吃  
+  > Pixel 3: 只要 gcam 版本 > 8.5 我就会死  
+  于是只能禁用更新以及肉眼自动忽略各种应用内外的更新提示。
+
+#### Ubuntu `->` Arch
+
+  我！终于！从 Ubuntu 转移到 Arch 了！  
+
+  此事在 [再见 Ubuntu 👋](2024-06-16-goodbye-ubuntu.md) 中亦有记载。简单来说 Ubuntu 强推 Snap 是赶跑我的最后一根稻草，依靠 BTRFS ~~孤独摇滚文件系统~~ 的子卷特性，在不更换主文件夹的基础上，只更换了根目录实现了到 Arch 的迁移。  
+
+#### X11 `->` Wayland
+
+  我！终于！从 X11(i3wm) 转移到 Wayland(Sway) 了！
+
+  此事在 [Hello, Sway](2024-12-01-Hello-Wayland.md) 中亦有记载。其实就是直接给 wlroots 和 sway 都切换到了 git 版本于是 nvidia 兼容性问题奇迹般地好了。  
+
+#### 早知道，还是原道.jpg
+
+![原道酱可爱捏](/assets/2024-12-31-2024-Maary-Review/image-20.webp){: width="50%" }
+
+
+#### 沃雷顿红日 500
+
+27.5 英寸车轮、蓝图 A3 变速、油压碟刹（没说哪家的，估计不是很好）、可锁死的前叉，整体上我还是挺满意的。  
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/IMG_20241218_232519_978.webp)|
+|本肥宅的赎罪券了。|
+
+买来加了前后的挡泥板，以及后面的货物夹。现在还在绝赞磨合中。  
+
+<div markdown='block' style="width: 50%;">
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/IMG_20241222_132547_394.webp)|
+|以及这几天的一次骑行|
+
+</div>
+
+### 应用相关
+
+#### cmd-wrapped: 终端也要年度总结
+
+[cmd-wrapped](https://github.com/YiNNx/cmd-wrapped) 是一个用 Rust 编写的工具，通过分析你的 shell 历史记录来给出一份简要的报告，比如你今年敲的第一条命令、在不同时间段的活跃度，最活跃的时间段等等。
+
+![比如这是我的 2024](/assets/2024-12-31-2024-Maary-Review/image-21.webp)
+
+#### 多邻国
+
+这里准确来说是「今年放弃了啥」。  
+
+<div class="table-wrapper" markdown="block" style="width: 80%;">
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/image-22.webp)|
+|我的连胜断在了这里|
+
+</div>
+
+多邻国的问题在于两个方面，第一个方面是我自己更多地变成了「为了打卡而打卡」，重点变成了完成任务而不是真的去学多少东西；第二个方面则是多邻国的算法变成了某种意义上的「外卖算法」：学的越多，任务越重。于是成了恶性循环，月度任务从完成二十个开始逐渐上升直到印象当中是五十个？而如果你就此放弃，没多长时间它又会掉回去。此外强制的一些不好完成又对我来说没有吸引力的其他「小游戏」任务进一步让我感到无奈。  
+
+于是在课程学得差不多，连胜感觉也可以了之后，卸载跑路了。  
+
+我还是很喜欢多邻国的，而且现在他们推出了音乐课程我可能也会下载回去。  
+
+
+#### Firefox 干正事了
+
+虽然仍然有各种各样的问题，但是看起来 Firefox 在往好的方向走了。列一些不错或者正在期待的更新内容：  
+
+1. Firefox 把之前 about:config 里藏的部分特性提前放到了 Labs 里，可以在设置里直接开启了。
+2. Firefox 承诺将改进侧边栏(config 中可启用)、支持侧边标签页(config 中可启用)和标签分组(config 中可启用，尚未完成)、以及 AI 支持(可在 Labs 中启用)。
+3. 切换标签页自动 PIP，好用！
+4. Android 版 Firefox 开始适配平板 UI。
+
+顺便还有一个 Inoreader 相关的问题：  
+在老版本的 Inoreader 移动端上，页面的渲染存在问题，他们会渲染一个宽度远超过当前屏幕显示范围的页面，导致各种显示错误和滑动问题。于是有了这个 [Inoreader Old Layout Fix](https://addons.mozilla.org/zh-CN/android/addon/inoreader-mobile-fix/) 的插件来修复这个问题。不过好消息是在 Inoreader 新设计的某个 beta 版本之后他们修好了这个问题，可喜可贺。  
+
+
+#### KDEConnect 自动同步剪贴板
+
+众所周知 Android 10 之后应用在后台读取系统剪贴板的权限受到了限制，于是在不 Root 的情况下 KDEConnect 的同步剪贴板功能就变成了半双向同步：电脑到手机畅通无阻，手机到电脑就需要手动点一下。但其实官方也给了[免 Root 解决方案](https://userbase.kde.org/KDEConnect#Auto-sync_on_Android_10+)，直接给 KDEConnect 一个 `READ_LOGS` 的权限：  
+
+```shell
+adb -d shell pm grant org.kde.kdeconnect_tp android.permission.READ_LOGS;
+adb -d shell appops set org.kde.kdeconnect_tp SYSTEM_ALERT_WINDOW allow;
+adb -d shell am force-stop org.kde.kdeconnect_tp;
+```
+
+当然这个方案也有其缺点，一是方法其实有点「脏」，这是官方的描述  
+
+> How does it work?  
+>   
+> With log reading enabled, KDE Connect watches its own log. If it sees a line indicating that it has been denied access to read the clipboard, it pops up an invisible window to the foreground, grabs the clipboard, and closes the window. 
+
+KDEConnect 在读取到自己访问剪贴板的行为被拒绝的日志之后则在前台开一个透明窗口然后拿剪贴板；  
+
+二是似乎这个权限需要每次重启后都重新授予？但这个我不太确定，也可能不需要？  
+
+#### 本地 LLM
+
+谁能想到你们 AI 真的就突飞猛进呢。  
+
+去年大概也有过类似的感叹，本来觉得跑个 CNN、YOLO 绰绰有余的 3050 现在啥都干不了。  
+不过跑个 7B 的模型还马马虎虎。  
+
+折腾本地模型还是靠 Ollama，它对于本地跑 LLM 的帮助太大了，正好体验了一把当时各路的模型，比如 Llama2, Gemma, qwen 等等。比如之前在 [自嗨记录之一](2024-04-22-Wallpaper-Tunnel-3.0.md) 里就试了一下用本地的 llama3:8b 来解释一些概念，感觉还是可以的。  
+
+虽然跨模型之间的比较其实我的使用强度不太能感知到，但是深刻感受到了参数越多越强。所以话说回来，还是 GPT-4o 和 Gemini 1.5 pro 好用啊。  
+
+
+#### YTM 的播客梦
+
+还是早点醒吧。  
+
+先不提 Spotify 和 YTM 怎么想起来的非要给音乐流媒体塞播客，YTM 的播客体验突出一个想一出是一出。  
+
+1. 好不容易支持了从 RSS 添加播客源，然后发现他们居然不支持 OPML 导入。如果说不做导出功能是可以理解但无耻的行为，不做导入简直就是无法理解的决定。唯一可行的解释就是，YTM 的团队，至少是负责播客的产品经理完全没有用过任何播客客户端。  
+2. YTM 的 RSS 添加播客源并不会老老实实按照播客源进行添加，而是会在平台上存在疑似同一个播客时，故作聪明的为你自动替换。于是我就遇到了非常直接的问题：机核的播客可以在 YTM 上搜索到，但是不知道是谁的问题，我这里并不能显示出来任何一集的内容。这个时候选择 RSS 添加，发现给我添加了同一个无法看到内容的频道。
+
+#### 支离破碎的社媒
+
+先开始大家都在用 Twitter，键政的键政、搞涩涩的搞涩涩、发广告的发广告。虽然也有去中心化的平台，比如 Mastodon，但是更多作为小圈子圈地自萌的状态。  
+后来马一龙买了 Twitter 开始犯病。这个时候大家开始找替代品，然后混乱开始了。  
+
+我们有：
+
+- 来看看马一龙的 X。虽然难看但是大部分人都在上面更新那只能先用着。
+- 老牌去中心化平台 Mastodon，正好我早就注册了账号，用起来。
+- Meta 看 Twitter 不顺眼十几年终于憋出来了 Threads，趁你病要你命，反正是 Instagram 账号通用，用起来。
+- 号称 Twitter 创始人杰克多西亲自上阵的 BlueSky，感觉不是很靠谱没去凑热闹。（顺便一提似乎杰克多西到底算多大程度上的创始人也不好说，以及现在他已从 BlueSky 跑路了。）
+
+然后在马一龙又一次犯病之后，大家又一次的跑路潮的目的地是：BlueSky？你是说我现在一个 Mastodon 和一个 Threads 账号，但大家又往 BlueSky 跑了？  
+于是无奈注册 BlueSky，现在四个平台一个平台一个账户，谁能看得过来啊（全恼
+
+#### Linux 微信 4.0
+
+微信！在 Linux 上！接近全功能！而且不限制系统！  
+
+这么一行文字看过去跟科幻小说一样。  
+
+简单说一下原来微信在 Linux 上的状态：最早的时候所谓的 Linux 微信就是一个网页版的打包。后来虽然出现了更接近 Windows 桌面端体验的版本，但是却限制了仅有 UOS、银河麒麟等个别国产操作系统可用，而且事实上功能依然很多缺失，比如不能自动登陆，小程序缺失等等。现在 Linux 微信 4.0 尽管仍然不能备份手机聊天记录，但是可以自动登录、支持暗色模式、不再限制系统等等，已经非常接近 Windows 端的体验了。  
+
+但是看看人家隔壁 QQ 团队全平台 Electron 的效果，张小龙的母亲还是无法落地。  
+
+#### 第三方 Telegram 客户端
+
+桌面上之前用的朋友打包的打了各种补丁的客户端，比较重要的功能比如屏蔽频道广告、隐藏 Stories 等等。但是朋友维护的也麻烦，他看到 [AyuGram](https://github.com/AyuGram/AyuGramDesktop) 之后直接跑路到这个上了。于是我也跟着看了看，一看发现确实很行，说说最喜欢的俩功能：
+
+- 默认静音发送  
+
+  |:--:|
+  |![默认静音！](/assets/2024-12-31-2024-Maary-Review/image-23.webp)|  
+  |你们 Tg 既然做了静音发送消息，但是却不能默认静音发送简直不可理喻。|
+
+- 截屏消息  
+
+  |:--:|
+  |![比如](/assets/2024-12-31-2024-Maary-Review/image-24.webp)|  
+  |可以说是做表情包的利器|
+
+Android 端还是之前就在用的 Nullgram，现在更以全新默认图标呈现。
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/image-26.webp)|
+|头像就是新图标|
+
+顺便一提我也做了一点微小的工作：比如提了希望能点击链接预览中的图片以查看图片而非打开链接的 issue，也提了给新图标对应的主题图标的 PR。  
+以及 Nullgram 也支持默认静音发送消息，也是我提的 PR。（如果有关功能出现问题我先滑跪了）
+
+#### 碎碎念
+
+- 流媒体的末路  
+
+简单来说是被 BA 日服 OST 给搞崩心态了，在某一天之后之前正常听的 OST 突然就怎么折腾都无法播放了。  
+一通测试之后似乎是必须要日区的 Google 账户 + 日区 IP 才能正常播放，这也太费劲了。不过好在后来找到了国际服的 OST（感觉上编排都不一样了）。  
+
+- WebP 太先进了
+
+之前看到 BlueArchive 5th PV 之后想看看细节另外也是准备当作壁纸备选，就逐帧拆开存本地了。然后发现转换成 PNG 是 12.9G，而转换成无压缩 WebP 则是基本上只要一半空间（但是转换太慢了没有等到转换全部完成），默认选项即带有压缩的 WebP 转换完只要 450MB，而且肉眼上分辨不出来什么区别。
+
+- 通过了 B 站的「硬核会员」答题，靠着 Bard（是的那会还叫 Bard）。
+
+## 今年写了啥
+
+### Blog
+
+{% assign start_date = "2024-01-01" | date: "%s" %}
+{% assign end_date = "2025-01-01" | date: "%s" %}
+{% assign post_count_24 = 0 %}
+
+{% for post in site.posts %}
+  {% assign post_date = post.date | date: "%s" %}
+  {% if post_date >= start_date and post_date <= end_date %}
+    {% assign post_count_24 = post_count_24 | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign start_date = "2023-01-01" | date: "%s" %}
+{% assign end_date = "2024-01-01" | date: "%s" %}
+{% assign post_count_23 = 0 %}
+
+{% for post in site.posts %}
+  {% assign post_date = post.date | date: "%s" %}
+  {% if post_date >= start_date and post_date <= end_date %}
+    {% assign post_count_23 = post_count_23 | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+去年还算是刚建起来 Blog 摸摸看，今年则是认真来搞了。一年下来总共写了 {{ post_count_24 }} 篇流水账，作为对比去年总共是 {{ post_count_23 }} 篇。不过更重要的是这次真的好好整了整博客，主要内容就在[该魔改这里主题了](2024-04-24-maary-flavored-minima.md)和[该自定义域名了](2024-04-24-custom-domain!.md)，明年也会继续折腾。  
+
+### 造轮子
+
+|:--:|
+|{% github_chart Steve-Mr default %}|
+|四五月份这么密集的更新也是有原因的，不过热力图也有欺骗性。|
+
+实际上那段时间我是抱着要把下半年的代码都写完的觉悟在写的(笑)，不过下半年也算开了坑。上半年开的新坑是 [Yet Another Calendar Widget](https://github.com/Steve-Mr/YetAnotherCalendarWidget)，但其实最满意的大概是[给 Wallpaper Tunnel 一通改](2024-04-22-Wallpaper-Tunnel-3.0.md)。下半年开的坑是 [Oblivionis](https://github.com/Steve-Mr/Oblivionis)，一个 Slidebox 的拙劣仿品。这么一年下来算是摸了 Jetpack Compose, Jetpack Glance, Android MVVM，动画等等东西，长进可能不多，看着还挺热闹。  
+
+- [Yet Another Battery Notifier](https://github.com/Steve-Mr/YetAnotherBatteryNotifier)
+  - 增加了设置页。可以设置百分比阈值以及夜间静音时间。
+  - 增加了微件可以用来显示当前的电流并且一键静音一小时。
+- [LiveInPeace](https://github.com/Steve-Mr/LiveInPeace)
+  - 进行了常规的 SDK 更新之类的操作。
+  - 得益于 Color OS 无亲无后的后台限制，我迫不得已把 Sleep Timer 的功能塞到了里面。
+  - 根据 Sleep Timer 增加了和 YABN 的联动：打开 Sleep Timer 则自动启动 YABN 的静音状态。
+- [redroid-script](https://github.com/Steve-Mr/redroid-script)
+  - 根据 waydroid-script 更新了 ndk 版本
+  - 同样根据 waydroid 社区做了给 ndk 打补丁以运行 Blue Archive 的功能
+- [Yet Another Calendar Widget](https://github.com/Steve-Mr/YetAnotherCalendarWidget)
+  - 差不多是省了两刀还是多少来着。
+  - 主要目的是为了展示追的番剧的更新计划。
+  - 顺便也塞了个空白微件进去，主要为了实现空白主屏。
+- [MaaryBot](https://gist.github.com/Steve-Mr/3d6c03ef1e09594330b174d7e6dc20f9)
+  - 从朋友那摸来了链接转换的代码，主要是为了用来转换一些社交平台的链接以提供更好的预览。
+- [Wallpaper Tunnel](https://github.com/Steve-Mr/WallpaperTunnel)
+  - 更新 Target API 等常规更新。
+  - 增加启动页，在实现获取当前壁纸进行编辑功能之外还简化了设置下载的图片为壁纸的流程。
+  - 设置专门的编辑器。
+    - 增加颜色填充功能
+    - 增加超分功能
+    - 增加横向图的裁切功能
+  - 增加首次启动欢迎页，引导设置必要权限。
+  - 优化界面，清理代码。
+- [Nullgram](https://github.com/qwq233/Nullgram)
+  - 根据 Nullgram 新增的默认图标提了个 themed icon 的 PR。
+- [Oblivionis](https://github.com/Steve-Mr/Oblivionis)
+  - 上滑删除图片，下滑标记图标不可删除，长按删除按键可以清空当前文件夹（除了被标记图片）。
+  - 在回收站可以彻底删除或恢复图片。
+- [twitter_to_fxtwitter.js](https://gist.github.com/Steve-Mr/225223060230a2dcd6a0e57efeb97325)
+  - 找的各种在 twitter 网页上点分享按钮的时候自动替换成 fxtwitter 的油猴脚本都不管用，倒是一个自动替换 vxtwitter 的正常，于是进行了魔改。
+
+接下来有在考虑要不要试着也做一个 ZeroCam 那样的 Android 程序，但是看起来还挺麻烦的所以暂时观望。 
+
+
+## 今年玩了啥
+
+### Blue Archive
+
+虽然日常想要退坑但是还没有下定决心，下次一定.jpg  
+但也确实从剧情一章不落变成「算了跳过完个任务拉倒了」，当然也和国际服落后日服半年有关，等活动轮到自己的时候早云了个差不多了。  
+
+同时不提哪边的对错，难以想象 Blue Archive 几乎在每个主要市场都出了幺蛾子：  
+- 大陆市场因为和雀魂的单向联动造成了所谓 ML 玩家的强烈不满；
+- 日韩市场因为部分主创人员集体跳槽，并且有在离职前故意降低作品质量的怀疑中，迅速宣布了与 Blue Archive 各种方面都相似的项目《Project KV》而产生争议，并且后面[迅速滑跪宣布项目终止](https://gnn.gamer.com.tw/detail.php?sn=273508)；
+- 港台市场则是经典在国际服周年活动的 Youtube 直播中出现了「国家/地区」争议，把自己架在了横竖都要得罪一拨人的状态。  
+
+但是 BA 的角色真的很香。  
+
+|:--:|
+|![礼服 hina！礼服 hina！礼服 hina！](/assets/2024-12-31-2024-Maary-Review/image-27.webp)|
+|嘿嘿 hina 嘿嘿|
+
+国际服落后日服半年也不完全是坏事，比如这半年给了自己「未来视」：手里的资源可以根据后面半年的活动进行安排，抽不抽角色一目了然。自然也给退坑造成了困难：  
+礼服 hina 完就退坑 -> 乐队甜点部完就退坑 -> 黑子实装完就退坑 -> 妃咲实装完就退坑 -> 偶像玛丽完就退坑(*New!*)
+
+### 死亡搁浅
+
+终于在 DS2 之前打完了死亡搁浅，尽管云了个大概但是自己亲自走完整条线还是很感概。  
+
+|:--:|:--:|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/image-28.webp)|![alt text](/assets/2024-12-31-2024-Maary-Review/image-29.webp)|![alt text](/assets/2024-12-31-2024-Maary-Review/image-30.webp)|
+
+DS2 预告看起来不错，但是续作的剧情能不能搂住始终是各家都翻过车的问题。现在只能希望不会出现「把我的感动还给我啊！」的剧情吧。
+
+### Balatro
+
+年度游戏提名的含金量，其实还挺想看到小丑牌拿了年度游戏的反应的（笑  
+
+|:--:|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/image-31.webp)|![alt text](/assets/2024-12-31-2024-Maary-Review/image-32.webp)|
+
+虽然我一直输输输，但是还真赢了一把！  
+
+### 碧蓝航线
+
+这个退坑真的就是沉默成本太大了，而且玩得好好的推什么坑。  
+但黄鸡也是一个每个月不找个事情给自己炎上一拨不舒服的主。  
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/image-33.webp)|
+|朋友们这谁顶得住啊|
+
+说实话能坚持碧蓝航线到现在 [AzurLaneAutoScript](https://github.com/LmeSzinc/AzurLaneAutoScript) 帮了大忙，一点启动挂那去睡觉就有小精灵帮你把每日任务全完成的体验也太好了。  
+
+<div markdown='block' style="width: 50%;">
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/image-37.webp)|
+|一些文案放飞自我|
+
+</div>
+
+顺便改了改模拟器试了一下折叠屏的效果，真不错啊。  
+
+|:--:|:--:|:--:|
+|![海天！海天！海天！](/assets/2024-12-31-2024-Maary-Review/image-34.webp)|![能代！能代！能代！](/assets/2024-12-31-2024-Maary-Review/image-35.webp)|![安克雷奇！安克雷奇！安克雷奇！](/assets/2024-12-31-2024-Maary-Review/image-36.webp)|
+
+
+### 动森手游
+
+停止运营了是坏事也是好事。  
+虽然明年(2025)十月之后就没有新内容了，但是买断制也避免了各种经典手游不充钱没法玩的限制。可惜我现在的精力却不大能顾的上它了，而且玩法也忘差不多了。  
+
+<div markdown="block" style="width: 50%;">
+
+|:--:|
+|![alt text](/assets/2024-12-31-2024-Maary-Review/20241221230910.webp)|
+|其实玩法还是挺复杂的|
+
+</div>
+
+## 感觉有点意思的东西？
+
+这里主要是视频，但是也有一个项目。  
+
+- [opencall](https://github.com/openrecall/openrecall)：冲着微软 Recall 来的，虽然还没有尝试，但是看起来还行。
+- [New Supercomputer Simulation Sheds Light on Moon’s Origin](https://www.youtube.com/watch?v=kRlhlCWplqk)：两年前的视频，对月亮起源的一个模拟。
+- [Classical Music Is Just Heavy Metal Before Electricity](https://www.youtube.com/watch?v=Zdol7Q3DMs4)：一些「强而有力」的古典音乐合集。
+- [Making Material Design](https://www.youtube.com/watch?v=rrT6v5sOwJg)：现在回看当年 Material Design 的开端，当时的想法还是很有吸引力。
+- [Ara: What's next](https://www.youtube.com/watch?v=aWW5mQadZAY)：可能这就是一个「不可能完成的任务」，但是看着现在换个后壳就恨不得满世界嚷嚷「模块化」的手机，希望有一个 Ara 大获成功的世界线。
+
+<!-- [Part 2 在这里](2024-12-31-2024-Maary-Review-Part2.md)。  
+[Part 3 在这里](2024-12-31-2024-Maary-Review-Part3.md)。   -->
