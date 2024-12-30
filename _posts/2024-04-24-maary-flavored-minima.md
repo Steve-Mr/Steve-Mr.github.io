@@ -291,4 +291,6 @@ tags:
 
 「这是一个『标点挤压测试』」，来看看（依靠字体实现）！  
 
-顺便用 [jekyll-lazy-load-image](https://github.com/kenchan0130/jekyll-lazy-load-image) 和 [vanilla-lazyload](https://github.com/verlok/vanilla-lazyload) 做了图片的延迟加载。
+~~顺便用 [jekyll-lazy-load-image](https://github.com/kenchan0130/jekyll-lazy-load-image) 和 [vanilla-lazyload](https://github.com/verlok/vanilla-lazyload) 做了图片的延迟加载。~~  
+
+现在只需要用 [jekyll-loading-lazy](https://github.com/gildesmarais/jekyll-loading-lazy) 实现依靠浏览器功能的延迟加载。

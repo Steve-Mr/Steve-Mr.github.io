@@ -52,17 +52,11 @@ plugins:
   - jekyll-paginate
   - jekyll-remote-theme
   - jekyll-github-chart
+  - jekyll-loading-lazy
 
 relative_links:
   enabled:     true
   collections: true
-
-lazy_load_image:
-  src_attr_name: data-src # [required] You need to specify the attributes to be saved for lazy loading
-  class_attr_values: # [optional] if you want to add custom class value, please add values
-    - lazy
-  additional_attrs: # [optional] if you want to add attributes, please add key value
-    "data-size": auto
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true

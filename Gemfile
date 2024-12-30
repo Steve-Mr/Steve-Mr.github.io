@@ -23,7 +23,6 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
   gem 'jekyll-github-chart'
-  gem 'jekyll-lazy-load-image', require: 'jekyll-lazy-load-image/auto-execution'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -39,11 +38,8 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-
 gem "webrick", "~> 1.8"
-
 gem "json", "~> 2.7"
-
 gem 'jekyll-sitemap'
-
 gem 'githubchart', '~> 4.0'
+gem 'jekyll-loading-lazy'

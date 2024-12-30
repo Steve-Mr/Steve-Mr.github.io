@@ -3,7 +3,7 @@ layout: post
 title: "给 Jekyll 的 Toc 设置 Scrollspy"
 date: 2024-12-29 19:00:00 +0800
 sitemap:
-  lastmod: 
+  lastmod: 2024-12-30 21:20:00 +0800
 toc: true 
 excerpt_separator: <!--more-->
 tags:
@@ -72,7 +72,9 @@ Toc 可以用静态方式实现，但是要动态更换高亮项目恐怕就绕�
     // 高亮当前滚动位置对应的 toc 链接
     let currentLink = null;
     if (currentId) {
-      currentLink = document.querySelector(`.toc a[href="#${currentId}"]`);
+      // 应对 toc 进行了编码和没有进行编码的情况
+      currentLink = document.querySelector(`.toc a[href="#${currentId}"]`) || 
+      document.querySelector(`.toc a[href="#${encodeURIComponent(currentId)}"]`);
       if (currentLink) {
         // 移除所有 toc 链接的高亮状态
         tocLinks.forEach(link => {
