@@ -37,7 +37,7 @@ permalink: /blog/:year/:title:output_ext
 # Build settings
 # theme: minima
 remote_theme: Steve-Mr/minima
-
+future: true
 # markdown: kramdown
 kramdown:
   parse_block_html: true
