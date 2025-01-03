@@ -7,7 +7,7 @@ sitemap:
 toc: true 
 excerpt_separator: <!--more-->
 tags:
-  - Year Reivew
+  - Year Review
   - Personal
 ---
 
