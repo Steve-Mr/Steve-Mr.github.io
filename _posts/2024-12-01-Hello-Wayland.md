@@ -123,7 +123,7 @@ Wayland 是一个旨在替代 X 窗口系统的显示服务器协议。虽然 Wa
 
 ## 配置
 
-那么最终的解决办法反而异常简单：我安装了 wlroots-git 和 sway-git 然后一切正常了，我前面都折腾了啥哦。要感谢我之前[放弃了 Ubuntu 转向 ArchLinux](/2024-06-16-goodbye-ubuntu.md)。  
+那么最终的解决办法反而异常简单：我安装了 wlroots-git 和 sway-git 然后一切正常了，我前面都折腾了啥哦。要感谢我之前[放弃了 Ubuntu 转向 ArchLinux](2024-06-16-goodbye-ubuntu.md)。  
 那么接下来就是写配置了，写死我了快。  
 
 ### Sway

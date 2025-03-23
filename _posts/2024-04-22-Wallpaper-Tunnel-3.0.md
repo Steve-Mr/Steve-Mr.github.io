@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "自嗨记录之一"
+title:  "自嗨记录之一：WallpaperTunnel"
 date:   2024-04-23  09:00:00 +0800
 toc: true
 categories: Android 
