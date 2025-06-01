@@ -43,3 +43,5 @@ gem "json", "~> 2.7"
 gem 'jekyll-sitemap'
 gem 'githubchart', '~> 4.0'
 gem 'jekyll-loading-lazy'
+gem "csv"
+gem "base64"
