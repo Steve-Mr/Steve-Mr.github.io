@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "自嗨记录之四：LLM 前端"
-date:   2025-05-31 22:00:00 +0800
+date:   2025-06-01 22:30:00 +0800
 toc: true
 excerpt_separator: <!--more-->
 tags:
