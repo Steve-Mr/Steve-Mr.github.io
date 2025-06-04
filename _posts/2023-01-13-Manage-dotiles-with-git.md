@@ -22,9 +22,10 @@ Bare 仓库需要一个工作树（work-tree）和 git 目录（git-directory）
 ```bash  
 git --git-dir=$HOME/.dotfiles --work-tree=$HOME status  
 ```  
-```--work-tree```：声明仓库需要追踪的文件地址在 ```$HOME``` 中。  
-```--git-dir```：声明仓库的位置。  
+`--work-tree`：声明仓库需要追踪的文件地址在 `$HOME` 中。  
+`--git-dir`：声明仓库的位置。  
 为了简便可以添加别名：  
+
 ```bash  
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"   
   
