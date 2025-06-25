@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "近期 Android 开发遇到的三个问题：图标可见性、SideSheet 和 BottomSheet"
-date:   2025-06-24 20:00:00 +0800
+date:   2025-06-25 20:55:00 +0800
 sitemap:
   lastmod: 
 toc: true
@@ -17,7 +17,7 @@ tags:
 ## 图标可见性
 
 我对自己写的应用一向是没有必要不放桌面图标，能隐藏就隐藏的态度。LiveInPeace 一开始就没有图标，FaceMoji 也放了隐藏图标的选项。只不过这次为了给 LiveInPeace 一个更完善的启动流程打算把桌面图标放出来，再加一个隐藏图标的选项。
-但这会我才发现隐藏图标的功能在刷了 Android 15 的 Pixel 3 上不能用，隐藏掉图标只是让点击图标跳转到系统设置里应用设置页。  
+但这会我才发现隐藏图标的功能在刷了 Android 15 的 Pixel 3 上不能用（而 Color OS 13 的 realme q3 pro 上却可以，Color OS 很神奇吧），隐藏掉图标只是让点击图标跳转到系统设置里应用设置页。  
 
 先说这里隐藏图标的实现逻辑：  
 每个应用都有一个应用清单，在用户点击图标之后要跳转到的页面需要在清单里声明「我是应用入口」，系统就会在用户点击图标时将用户导入到这个页面。那么在用户选择隐藏图标的选项之后，就将这个页面禁用掉，从而试图让系统找不到应用入口从而隐藏图标。  
@@ -30,9 +30,9 @@ tags:
 > - The app doesn't request any permissions.  
 > - The app doesn't have a launcher activity that is enabled by default. A launcher activity has an intent containing the ACTION_MAIN action and the CATEGORY_LAUNCHER category.  
 
-按照这里的要求只要应用不申请任何权限，就可以隐藏掉图标。但是从实际上的测试来看，动态禁用组件来隐藏图标是不可行的。只有在初始状态下不声明应用入口才能隐藏图标，但是可以在后续启用应用入口的组件来显示图标。  
+按照这里的要求只要应用不申请任何权限，就可以隐藏掉图标。但是从实际上的测试来看，动态禁用组件来隐藏图标是**不可行**的。只有在初始状态下不声明应用入口才能隐藏图标，但是可以在后续启用应用入口的组件来显示图标。  
 
-因此目前的方案是：新增一个默认不显示图标的应用。  
+因此目前的方案是：新增一个默认不显示图标的版本，虽然默认不显示图标但是可以后续进入设置显示图标。  
 
 这是目前 FaceMoji 的状态：
 
@@ -91,7 +91,7 @@ productFlavors {
 
 FaceMoji 上一个[实时预览功能](https://github.com/Steve-Mr/EmojiFace/issues/14)的 issue 让我打算把编辑 Emoji 的对话框换成 BottomSheet，与之对应的大屏布局下就是 SideSheet……吗？  
 
-|![alt text](/assets/2025-06-24-three-problems-recent-android-dev/image.png)|
+|![alt text](/assets/2025-06-24-three-problems-recent-android-dev/image.webp)|
 |:--:|
 |那我问你，我 Jetpack Compose 的 SideSheet 呢？|
 
@@ -118,7 +118,7 @@ FaceMoji 上一个[实时预览功能](https://github.com/Steve-Mr/EmojiFace/iss
 
 实际上确实简单，直到 Color OS 给我整了活。  
 
-|![alt text](/assets/2025-06-24-three-problems-recent-android-dev/Screenshot_2025-06-24-22-53-08-20_05bb2a206153740e9151ba3f4ad650d4.jpg)|
+|![alt text](/assets/2025-06-24-three-problems-recent-android-dev/Screenshot_2025-06-24-22-53-08-20_05bb2a206153740e9151ba3f4ad650d4.webp)|
 |:--:|
 |这里的空白是怎么回事呢？小编也不知道|
 
@@ -210,4 +210,40 @@ fun SurfaceSideSheet(
 ## BottomSheet
 
 Vibe Coding 的报应就来了，虽然其实我自己来也要踩到这个坑的。  
+
+|![alt text](/assets/2025-06-24-three-problems-recent-android-dev/bottomerror.webp)|
+|:--:|
+|效果看图吧|
+
+这里要实现的效果是：在用户点击 BottomSheet 以外的区域时 BottomSheet 不会自动收起，但导致的意外问题是滑动滑块会导致整个 BottomSheet 疯狂重绘以至于出现了「透明」的效果。  
+
+Gemini 给出的方式非常符合逻辑，既然不想让他关闭，那么只要不允许其转移到关闭状态就好了：  
+
+```kotlin
+val bottomSheetState = rememberModalBottomSheetState( 
+            skipPartiallyExpanded = true,
+            confirmValueChange = { it != SheetValue.Hidden }
+        )
+```
+
+但总之是出现了上面的问题，具体的细节原因我也没有完全理解。我后面也试着搜了一下相关的解法，发现 StackOverflow 上也是这个方法，这下 Gemini 这个回答的来源倒也知道了。  
+
+最后的无奈解法是有些鬼畜的「没有按规定的方法关闭 BottomSheet 那么 BottomSheet 就会自己重新打开」：  
+
+```kotlin
+ModalBottomSheet(
+    onDismissRequest = {
+        scope.launch {
+            // 重新展开，以阻止关闭
+            bottomSheetState.show()
+        }
+    },
+    sheetState = bottomSheetState,
+    dragHandle = { },
+    sheetGesturesEnabled = false,
+    containerColor = containerColor
+) { }
+```
+
+
 
