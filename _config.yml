@@ -80,6 +80,7 @@ minima:
   header_pages:
     - archive.markdown
     - about.markdown
+    - apps.markdown
 
 # Generate social links in footer.
   social_links:

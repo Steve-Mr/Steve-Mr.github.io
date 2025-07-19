@@ -1,0 +1,131 @@
+    /* 卡片主容器 */
+    .app-card {
+        display: flex;
+        flex-wrap: wrap; /* 在极窄屏幕上允许内容块换行 */
+        gap: 0rem; /* 统一设置卡片内主元素间距，解决问题1 */
+        margin-bottom: 3rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        align-items: flex-start; /* 顶部对齐 */
+    }
+
+    /* 1. 调整应用图标间距 */
+    .app-icon {
+        flex: 0 0 96px; /* 固定图标容器宽度，不拉伸或压缩 */
+        /* 移除了 margin-right，现在间距由父容器的 gap 属性统一控制，确保与卡片边距视觉上更协调 */
+    }
+
+    .app-icon img {
+        width: 96px;
+        height: 96px;
+        border-radius: 16px;
+        display: block; /* 避免图片下方出现多余空隙 */
+    }
+
+    .app-info {
+        flex: 1;
+        min-width: 250px; /* 在空间不足时，此元素会尝试保持至少250px宽 */
+    }
+
+    /* 2. 实现截图横向滚动 */
+    .app-screenshots {
+        display: flex;
+        flex-wrap: nowrap; /* 强制不换行，始终保持横向排列 */
+        overflow-x: auto;  /* 当内容超出时，出现横向滚动条 */
+        gap: 0.75rem;      /* 截图之间的间距 */
+        padding-bottom: 1rem; /* 为滚动条留出一些空间，避免紧贴图片 */
+    }
+
+    .app-screenshots img {
+        height: 220px; /* 固定截图高度，使其整齐划一 */
+        width: auto;   /* 宽度自适应，保持图片原始比例 */
+        max-width: none; /* 移除最大宽度限制，以允许横向滚动 */
+        border-radius: 8px;
+        flex-shrink: 0; /* 防止图片在 flex 容器中被压缩变形 */
+    }
+
+    /* 4. Modern-retro download buttons using Minima theme variables */
+    /* "Dense Glass" style buttons */
+    .download-links {
+        margin-top: 1.5rem;
+    }
+
+.download-links a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 8px 16px;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.3),
+        0 4px 6px rgba(0, 0, 0, 0.1);
+
+    color: var(--text-color, #111);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+/* 光泽反光效果：用伪元素加一层高光映射 */
+.download-links a::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at top left,
+        rgba(255, 255, 255, 0.4),
+        transparent 70%
+    );
+    transform: rotate(25deg);
+    pointer-events: none;
+    transition: opacity 0.3s;
+    opacity: 0.15;
+}
+
+.download-links a:hover::before {
+    opacity: 0.3;
+}
+
+.download-links a:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.2)
+    );
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-links a:active {
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.05)
+    );
+    transform: translateY(1px);
+    box-shadow:
+        inset 0 1px 2px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.05);
+    transition-duration: 0.1s;
+}

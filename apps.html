@@ -1,0 +1,37 @@
+---
+layout: base
+title: Apps
+permalink: /apps/
+---
+
+{% for app in site.data.apps %}
+<div class="app-card">
+    <div class="app-icon">
+        <img src="{{ app.icon }}" alt="{{ app.name }} Icon" style="width: 64px; height: 64px; border-radius: 12px;">
+    </div>
+    <div class="app-info">
+        {% if app.link %}
+            <h3><a href="{{ app.link }}" target="_blank">{{ app.name }}</a></h3>
+        {% else %}
+            <h3>{{ app.name }}</h3>
+        {% endif %}
+        <p>{{ app.description }}</p>
+        
+        {% if app.screenshots and app.screenshots.size > 0 %}
+        <div class="app-screenshots">
+            {% for screenshot in app.screenshots %}
+            <img src="{{ screenshot }}" alt="{{ app.name }} Screenshot" width="160">
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if app.links and app.links.size > 0 %}
+        <div class="download-links">
+            {% for link in app.links %}
+            <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,92 @@
+# /_data/apps.yml
+
+- name: WallpaperTunnel
+  link: https://github.com/Steve-Mr/WallpaperTunnel
+  icon: /assets/apps/wallpapertunnel-icon.webp
+  description: 一个简化壁纸设置流程的应用。通常设置壁纸需要“找图→存图→进图库→设置”，而 WallpaperTunnel 可以将其简化为“找图→分享到应用→设置”。它还内置了图片编辑器，支持超分辨率、纯色/模糊填充等功能。
+  screenshots:
+    - /assets/apps/wallpapertunnel1.webp
+    - /assets/apps/wallpapertunnel2.webp
+    - /assets/apps/wallpapertunnel3.webp
+  links:
+    - name: 下载
+      url: https://github.com/Steve-Mr/WallpaperTunnel/releases/latest/download/WallpaperTunnel-arm64-v8a.apk
+    - name: 下载（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/WallpaperTunnel/releases/latest/download/WallpaperTunnel-arm64-v8a.apk
+
+- name: LiveInPeace
+  link: https://github.com/Steve-Mr/LiveInPeace
+  icon: /assets/apps/liveinpeace-icon.webp
+  description: 这个应用可以让你一眼看到当前的媒体音量，避免在需要安静的场合误操作。它还可以在你连接耳机时，如果音量过大，则自动调低音量，保护你的听力。
+  screenshots:
+    - /assets/apps/liveinpeace1.webp
+    - /assets/apps/liveinpeace2.webp
+  links:
+    - name: 下载
+      url: https://github.com/Steve-Mr/LiveInPeace/releases/latest/download/LiveInPeace-icon-enabled-arm64-v8a.apk
+    - name: 隐藏图标版
+      url: https://github.com/Steve-Mr/LiveInPeace/releases/latest/download/LiveInPeace-icon-disabled-arm64-v8a.apk
+    - name: 下载（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/LiveInPeace/releases/latest/download/LiveInPeace-icon-enabled-arm64-v8a.apk
+    - name: 隐藏图标版（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/LiveInPeace/releases/latest/download/LiveInPeace-icon-disabled-arm64-v8a.apk
+
+- name: Yet Another Calendar Widget
+  link: https://github.com/Steve-Mr/YetAnotherCalendarWidget
+  icon: /assets/apps/yacw-icon.webp
+  description: <i>Yet Another Calendar Widget</i> is yet another calendar widget. 也有透明微件！
+  screenshots:
+    - /assets/apps/yacw1.webp
+    - /assets/apps/yacw2.webp
+  links:
+    - name: 下载
+      url: https://github.com/Steve-Mr/YetAnotherCalendarWidget/releases/latest/download/YetAnotherCalendarWidget-arm64-v8a.apk
+    - name: 下载（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/YetAnotherCalendarWidget/releases/latest/download/YetAnotherCalendarWidget-arm64-v8a.apk
+
+- name: Yet Another Battery Notifier
+  link: https://github.com/Steve-Mr/YetAnotherBatteryNotifier
+  icon: /assets/apps/yabn-icon.webp
+  description: 显示当前充放电速度，并且在到达阈值时提醒。
+  screenshots:
+    - /assets/apps/yabn1.webp
+    - /assets/apps/yabn2.webp
+    - /assets/apps/yabn3.webp
+  links:
+    - name: 下载
+      url: https://github.com/Steve-Mr/YetAnotherBatteryNotifier/releases/latest/download/YetAnotherBatteryNotifier-arm64-v8a.apk
+    - name: 下载（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/YetAnotherBatteryNotifier/releases/latest/download/YetAnotherBatteryNotifier-arm64-v8a.apk
+
+- name: Oblivionis
+  link: https://github.com/Steve-Mr/Oblivionis
+  icon: /assets/apps/oblivionis-icon.webp
+  description: 一个简单的图片「回收站」应用，灵感来自 iOS 上的 Slidebox。你可以通过上滑将图片移至回收站，下滑锁定图片防止误删，并在回收站中进行最终确认删除或恢复。
+  screenshots:
+    - /assets/apps/ob1.webp
+    - /assets/apps/ob2.webp
+    - /assets/apps/ob3.webp
+  links:
+    - name: 下载
+      url: https://github.com/Steve-Mr/Oblivionis/releases/latest/download/Oblivionis-arm64-v8a.apk
+    - name: 下载（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/Oblivionis/releases/latest/download/Oblivionis-arm64-v8a.apk
+
+
+- name: FaceMoji
+  link: https://github.com/Steve-Mr/EmojiFace
+  icon: /assets/apps/facemoji-icon.webp
+  description: 一个小工具，可以自动识别图片中的人脸，并用 Emoji 表情或马赛克覆盖。你也可以手动在图片上进行修改，并且可以导入自己喜欢的 Emoji 字体。
+  screenshots:
+    - /assets/apps/facemoji1.webp
+    - /assets/apps/facemoji2.webp
+    - /assets/apps/facemoji4.webp
+  links:
+    - name: 下载
+      url: https://github.com/Steve-Mr/EmojiFace/releases/latest/download/facemoji-default-arm64-v8a.apk
+    - name: 隐藏图标版
+      url: https://github.com/Steve-Mr/EmojiFace/releases/latest/download/facemoji-icon-disabled-arm64-v8a.apk
+    - name: 下载（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/EmojiFace/releases/latest/download/facemoji-default-arm64-v8a.apk
+    - name: 隐藏图标版（备用线路）
+      url: https://ghfast.top/https://github.com/Steve-Mr/EmojiFace/releases/latest/download/facemoji-icon-disabled-arm64-v8a.apk
