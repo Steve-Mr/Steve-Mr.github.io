@@ -52,6 +52,7 @@
         margin-top: 1.5rem;
     }
 
+
 .download-links a {
     display: inline-block;
     margin-right: 0.5rem;
@@ -74,14 +75,22 @@
         inset 0 1px 1px rgba(255, 255, 255, 0.3),
         0 4px 6px rgba(0, 0, 0, 0.1);
 
-    color: var(--text-color, #111);
+    /* --- 这是修改的核心部分 --- */
+
+    /* 1. 移除了不合适的后备颜色，强制使用主题变量 */
+    color: var(--text-color); 
+
+    /* 2. 将亮的文字阴影改成暗的，使其在亮色文字（暗色模式）下更清晰 */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+    
+    /* --- 修改结束 --- */
+
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
-
     transition: all 0.3s ease;
 }
+
 
 /* 光泽反光效果：用伪元素加一层高光映射 */
 .download-links a::before {
