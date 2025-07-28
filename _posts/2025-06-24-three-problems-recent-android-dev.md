@@ -8,6 +8,7 @@ toc: true
 excerpt_separator: <!--more-->
 tags:
     - Android
+image: /assets/2025-06-24-three-problems-recent-android-dev/image.webp
 ---
 看不懂的文档、缺位的官方库与魔改的第三方、不完善的民间解法和被带偏的 LLM。
 <!--more-->
