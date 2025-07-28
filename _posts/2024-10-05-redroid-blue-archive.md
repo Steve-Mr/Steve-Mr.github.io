@@ -6,6 +6,7 @@ toc: true
 categories: android 
 excerpt_separator: <!--more-->
 tags: [Android, Redroid, Blue Archive, 转译层, Emulator]
+image: /assets/2024-10-05-redroid-blue-archive/1728137667.webp
 ---
 
 前几天还念叨 Redroid 上没法跑 Blue Archive，结果今天心血来潮又折腾了一次居然成了。  

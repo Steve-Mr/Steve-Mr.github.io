@@ -9,6 +9,7 @@ tags:
   - Redroid
   - Android
   - 碧蓝航线
+image: /assets/2024-10-01-Hello, Redroid/image_2024-10-01_15-33-04.webp
 ---
 
 虽然 Blue Archive 的问题仍然没有解决，但至少摆脱 Genymotion 的水印了。

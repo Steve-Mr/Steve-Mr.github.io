@@ -5,6 +5,7 @@ date:   2024-06-19  09:00:00 +0800
 toc: true
 categories: jekyll 
 excerpt_separator: <!--more-->
+image: /assets/2024-06-16-goodbye-ubuntu/1718541975.webp
 tags: 
    - Linux
    - Ubuntu

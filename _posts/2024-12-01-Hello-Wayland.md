@@ -11,6 +11,7 @@ tags:
   - ArchLinux
   - Sway
   - Wayland
+image: /assets/2024-12-01-Hello-Wayland/image.webp
 ---
 我！终于！迁移到 Wayland 了！  
 *虽然我现在已经不知道为啥要迁移了。
