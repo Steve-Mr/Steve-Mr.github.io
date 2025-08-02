@@ -2,6 +2,7 @@
 layout: base
 title: About
 permalink: /about/
+image: /assets/about/image.webp
 ---
 你好，这里是 Maary 讲梦话的地方。没有太多营养，也没有什么华丽辞藻，只是自己编织的梦境罢了，不过如果能帮到迷途者就更好了。  
 
