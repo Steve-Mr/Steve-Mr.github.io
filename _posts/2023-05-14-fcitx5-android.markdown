@@ -10,6 +10,7 @@ tags:
     - App
     - App Review
     - Fcitx5
+image: /asset/fcitx5/ui.webp
 ---
 先套盾：我的体验时间并不长，有些东西可能研究不够透彻，项目也处在早期状态，我仍然是爱 Fcitx5 的。
 

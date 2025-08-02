@@ -9,6 +9,7 @@ excerpt_separator: <!--more-->
 tags:
   - Linux
   - Sway
+image: /assets/2024-12-12-sway-remember-pip/image.webp
 ---
 
 ## TL; DR
@@ -158,7 +159,7 @@ swaymsg "move position $new_x $new_y"
 2. 有 PIP 出来就自动调整大小和位置到上次的状态，如果没有上次的记录就自动移动到右下角。
 3. 如果移动和调整了 PIP 窗口，那么窗口的焦点状态会发生改变，然后根据最后的状态写到文件中供第二步读取。
 
-得益于 Sway 和 i3 的兼容性，i3ipc-python 库也支持 Sway，因此可以直接摸过来用。然后理所当然的找 GPT 要代码了，顺便还出发了 ChatGPT 的 Canvas 特性。  
+得益于 Sway 和 i3 的兼容性，i3ipc-python 库也支持 Sway，因此可以直接摸过来用。然后理所当然的找 GPT 要代码了，顺便还触发了 ChatGPT 的 Canvas 特性。  
 
 ![ChatGPT Canvas](/assets/2024-12-12-sway-remember-pip/image.webp)
 

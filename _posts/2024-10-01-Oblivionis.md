@@ -10,6 +10,7 @@ tags:
     - App
     - Oblivionis
     - Development
+image: /assets/2024-10-01-Oblivionis/image-1.webp
 ---
 
 > 造轮子，爽！  

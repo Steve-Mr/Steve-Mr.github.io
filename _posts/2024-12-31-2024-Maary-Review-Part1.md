@@ -9,6 +9,7 @@ excerpt_separator: <!--more-->
 tags:
   - Year Review
   - Personal
+image: /assets/2024-12-31-2024-Maary-Review/image-21.webp
 ---
 
 > 和去年一样的警告，本文（不一定）含有：  

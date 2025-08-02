@@ -9,6 +9,7 @@ tags:
     - Linux
     - Cursor
     - Development
+image: /asset/WcurPorter/cursor-alice.webp
 ---
 
 其实是不该鼓捣的，但是我还是想奖励一下自己。  

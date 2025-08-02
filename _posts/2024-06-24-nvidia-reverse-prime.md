@@ -9,6 +9,7 @@ tags:
   - Linux
   - Nvidia
   - X11
+image: /assets/2024-06-24-nvidia-reverse-prime/image.webp
 ---
 
 ## 起因

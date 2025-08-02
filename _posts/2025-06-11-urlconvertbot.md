@@ -8,6 +8,7 @@ toc: true
 excerpt_separator: <!--more-->
 tags:
     - Cloudflare Workers
+image: /assets/2025-06-11-urlconvertbot/Screenshot_2025-06-10_at_22-32-15.webp
 ---
 
 本着能白嫖就白嫖的原则，毛了朋友的代码在 Cloudflare Workers 上放了一个链接转换 Bot 给群友用，正好群友前两天问起来了决定大概写一下怎么部署。  

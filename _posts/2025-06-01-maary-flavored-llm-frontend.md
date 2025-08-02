@@ -9,6 +9,7 @@ excerpt_separator: <!--more-->
 tags:
     - LLM
     - Development
+image: /assets/2025-06-01-maary-flavored-llm-frontend/image-4.webp
 ---
 
 首先，儿童节快乐！  

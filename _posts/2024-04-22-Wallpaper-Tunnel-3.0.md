@@ -9,6 +9,7 @@ tags:
     - App
     - WallpaperTunnel
     - Development
+image: /asset/WallpaperTunnel3.0/paint_blur.webp
 ---
 
 > 造轮子，痛！  

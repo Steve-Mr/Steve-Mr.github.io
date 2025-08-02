@@ -10,6 +10,7 @@ excerpt_separator: <!--more-->
 tags:
   - Jekyll
   - Minima
+image: /asset/minima/fav_icons.webp
 ---
 
 但其实也没整多大改动，并且懒得配图了。

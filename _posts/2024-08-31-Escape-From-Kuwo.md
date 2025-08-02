@@ -7,6 +7,7 @@ categories: music
 excerpt_separator: <!--more-->
 tags: 
     - Music
+image: /assets/2024-08-31-Escape-From-Kuwo/Screenshot_2024-08-31-18-38-24-01_176161be900e0e29934afca83eb113f8~2.webp
 ---
 
 为了把酷我的歌单下到本地绕了一个超大弯：`在酷我里扒拉数据库 -> 从数据库导出 csv -> 把 csv 导入到 spotify -> 用 spotdl 从 Youtube 下载歌单`，顺带发现了一些整蛊 bug。虽说最后结果也只能说是还行。
