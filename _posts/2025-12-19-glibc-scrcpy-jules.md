@@ -3,7 +3,7 @@ layout: post
 title: "一些 Scrcpy 折腾和 Jules 简单体验"
 date: 2025-12-19 22:00:00 +0800
 sitemap:
-  lastmod: 
+  lastmod: 2026-01-04 20:00:00 +0800
 toc: true
 excerpt_separator: <!--more-->
 tags:
@@ -14,6 +14,8 @@ tags:
 
 谁能想到我都跑到 Arch 了还能被依赖问题追上呢（但这次和 Arch 无关
 另外直接 LLM Agent Vibe Coding 确实有点意思。
+
+更新：跑到 Arch 上也能因为太新了的问题被追上。
 
 <!--more-->
 
@@ -91,3 +93,12 @@ wget https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz -O ffmpeg-7.1.1.tar.xz ffmp
 感谢 Taskbar。  
 
 ![效果](../assets/2025-12-19-glibc-scrcpy-jules/截图_scrcpy_20251219103326.webp)
+
+
+## 一些更新：太新了也是问题
+
+在吃上 6.18.2 的内核之后发现 `scrcpy` 开启 Redroid 容器出现问题：命令没有报错，但是窗口没有出现，同时那边 `alas` 却能正常运行，用 `scrcpy` 投屏实体机器也没有问题。  
+
+查了一圈发现 binder 有问题，跟朋友一对账发现是 linux 主线内核把 binder 给 riir 了，然后报了一堆兼容问题。  
+
+于是现在只有 Workaround：用没有 riir binder 的版本，比如 `cachyos` 那边编译的内核或者 lts 版本的内核。  
