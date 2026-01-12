@@ -75,7 +75,8 @@ minima:
   # Available skins are:
   # auto	             Adaptive skin based on the default classic and dark skins.
   # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: verdant
+  skin: antirez 
+  # verdant
 
   header_pages:
     - archive.markdown
